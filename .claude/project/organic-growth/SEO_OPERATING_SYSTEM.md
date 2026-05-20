@@ -58,3 +58,69 @@ O objetivo é construir um website que:
 - Não há conteúdo SEO genérico.
 - Não há design que esconda conteúdo crítico.
 - Não há dependência pesada sem performance review.
+- Não há análise SEO grande sem ficheiro persistente (ver Persistence Rule abaixo).
+
+## Persistence Rule
+
+Sempre que o utilizador pede uma destas análises, o resultado **não pode ficar apenas no chat**:
+
+- análise SEO completa;
+- planeamento SEO;
+- análise de concorrência;
+- auditoria técnica;
+- keyword research / cluster map;
+- content gap analysis;
+- estratégia de conteúdos;
+- Core Web Vitals / performance;
+- schema / entidades;
+- local SEO;
+- AI Search / GEO;
+- plano de ação SEO.
+
+O resultado vai para um ficheiro datado em:
+
+```
+.claude/project/organic-growth/reports/YYYY-MM-DD__report-type.md
+```
+
+Usar sempre o template em [`reports/_TEMPLATE_seo-report.md`](./reports/_TEMPLATE_seo-report.md).
+
+**Markdown (`.md`) por defeito**, não `.txt` — para renderizar no GitHub.
+
+Ver [`reports/README.md`](./reports/README.md) para o detalhe completo do formato.
+
+## Anti-token-waste
+
+> **Análise longa sem ficheiro persistente = desperdício de contexto.**
+
+Antes de continuar uma análise SEO grande, qualquer agente (em particular o Supervisor / Change Manager) deve verificar:
+
+> *"Esta análise está a ser persistida em ficheiro?"*
+
+Se a resposta for **não**, parar imediatamente e:
+1. Criar o ficheiro em `reports/YYYY-MM-DD__*.md` a partir do template.
+2. Despejar para lá o que já foi analisado.
+3. Só depois continuar.
+
+A regra aplica-se tanto a relatórios completos como a análises parciais que o utilizador pediu como blocos de uma análise maior.
+
+## Living vs dated files
+
+A pasta `organic-growth/` separa **ficheiros datados** (snapshots históricos) de **ficheiros vivos** (estado atual curto):
+
+| Tipo | Localização | Função |
+|---|---|---|
+| Datado | `reports/YYYY-MM-DD__*.md` | Análise completa, snapshot no tempo, não editar depois de publicar. |
+| Vivo | `SEO_CURRENT_STATUS.md` | Estado atual curto + apontador para último relatório. |
+| Vivo | `SEO_BACKLOG.md` | Tarefas acionáveis priorizadas. |
+| Vivo | `SEO_OPPORTUNITIES.md` | Hipóteses/ideias antes de virarem tarefas. |
+| Vivo | `SEO_DECISION_LOG.md` | Decisões SEO importantes e duradouras. |
+
+**Após criar um relatório datado**, atualizar os ficheiros vivos:
+
+1. `SEO_CURRENT_STATUS.md` — resumo curto + link para o novo relatório.
+2. `SEO_BACKLOG.md` — adicionar tarefas acionáveis identificadas.
+3. `SEO_OPPORTUNITIES.md` — adicionar oportunidades novas.
+4. `SEO_DECISION_LOG.md` — registar **apenas** decisões reais e duradouras.
+
+**Nunca duplicar** o relatório inteiro nos ficheiros vivos — os ficheiros vivos são índices/sumários.

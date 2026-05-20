@@ -6,11 +6,13 @@ Construir equipa SEO/Organic Growth para Previmed (HSST B2B nacional) e produzir
 
 ## Lote atual
 
-**Fase 2 — Dados.** 2.1, 2.3, 2.4 fechados. 2.2 (AIO) bloqueado por reload do MCP Playwright. 2.5 (baseline metrics) bloqueado até GSC ter 28d de coleta.
+**Fase 2 — Dados.** 2.1, 2.2, 2.3, 2.4 fechados. 2.5 (baseline metrics) bloqueado até GSC ter 28d de coleta.
+
+Adicionalmente: **Change Management aplicado** — sistema Organic Growth passou a persistir análises grandes em `.claude/project/organic-growth/reports/` (regra `SEO_OPERATING_SYSTEM.md` §Persistence Rule / §Anti-token-waste).
 
 ## Estado
 
-idle — aguarda (1) reload Claude Code para arrancar 2.2 e (2) decisão tua em 2.3 (DataForSEO vs alternativa) e (3) execução tua de 2.4 (ligar GSC, GA4, Site Kit, criar API key PSI).
+idle — aguarda (1) decisão tua em 2.3 (DataForSEO vs alternativa) e (2) execução tua de 2.4 (ligar GSC, GA4, Site Kit, criar API key PSI) e (3) decisão de ordem de produção dos 5 briefs P1 (ver `reports/2026-05-20__aio-expansion.md` §Decisions Needed).
 
 ## Ficheiros alterados (desta sessão)
 
@@ -33,6 +35,8 @@ idle — aguarda (1) reload Claude Code para arrancar 2.2 e (2) decisão tua em 
 - Lote 2.1: `AUDIT_PREVIMED_BASELINE.md` — auditoria técnica do site atual, achados críticos (titles partidos, sem hub editorial, sem Service schema). Commit `89bb2e7`.
 - Lote 2.3: `DECISION_KEYWORD_DATA_TOOL.md` — recomendação DataForSEO + GSC + Playwright + Keyword Planner. Aguarda decisão.
 - Lote 2.4: `SETUP_GSC_GA4.md` — guia passo-a-passo para o utilizador ligar GSC, GA4, Site Kit, PSI API.
+- Lote 2.2: `reports/2026-05-20__aio-expansion.md` — análise AIO em 5 queries P1 (medicina trabalho, segurança trabalho, HACCP, formação 35→40h, como escolher MT). Snapshots brutos em `aio-captures/`. Previmed citado em 1/5 (Q5). Achado crítico: lei mudou 35→40h.
+- Change Management 2026-05-20: criados `reports/`, `_TEMPLATE_seo-report.md`, `SEO_CURRENT_STATUS.md`, `SEO_OPPORTUNITIES.md`, `SEO_DECISION_LOG.md`; atualizados `SEO_OPERATING_SYSTEM.md` (Persistence Rule + Anti-token-waste), `SEO_BACKLOG.md`, `README.md`.
 
 ## Próximo (a confirmar com utilizador)
 
