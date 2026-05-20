@@ -41,7 +41,8 @@
 - `wip` `P1` Pillar Q3 "HACCP" — **copy final escrito** `reports/2026-05-20__copy-pillar-q3-haccp.md`. Aguarda idem. Origem: §Q3.
 - `wip` `P1` Pillar Q4 "Formação 40h obrigatória" — **copy final escrito** `reports/2026-05-20__copy-pillar-q4-formacao-40h.md`. Aguarda: (1) substituir placeholder Dra. Inês Carvalho, (2) hub `/recursos/guias/`, (3) atualização sincronizada de `/consultoria-formacao/` (atualmente diz "35h"), (4) deploy. Origem: §Q4.
 - `wip` `P1` Pillar Q5 "Como escolher empresa MT" — **copy final escrito** `reports/2026-05-20__copy-pillar-q5-escolher-mt.md`. Aguarda: (1) substituir placeholders Dr. Miguel Henriques + `<<…>>` por dados reais, (2) criar hub `/recursos/guias/`, (3) deploy WP. Origem: §Q5.
-- `todo` `P1` **3 spin-offs P1-A** (alto valor / baixo esforço, ~3.75 pd): Avença vs ato (Q5), Lei 93/2019 (Q4), Ficha de Aptidão (Q1). Origem: `reports/2026-05-20__spin-offs-briefs.md` §P1-A.
+- `wip` `P1` SO-1 Avença vs ato — **copy final escrito** `reports/2026-05-20__copy-spinoff-avenca-vs-ato.md`. Aguarda placeholders + ranges reais + deploy. Origem: `reports/2026-05-20__spin-offs-briefs.md` §SO-1.
+- `todo` `P1` SO-2 Lei 93/2019 + SO-3 Ficha de Aptidão (spin-offs P1-A restantes, ~2.5 pd). Origem: §SO-2 + §SO-3.
 - `todo` `P2` **3 spin-offs P1-B** (~4 pd): Relatório Único Anexo D (Q5), HACCP restauração (Q3), 4 modalidades SST (Q2). Origem: §P1-B.
 - `todo` `P2` **5 spin-offs P2** (~5.25 pd, priorizar após recaptura AIO t+30d). Origem: §P2.
 - `todo` `P3` **4 spin-offs P3** (geo + compliance long-tail, ~4 pd). Origem: §P3.
