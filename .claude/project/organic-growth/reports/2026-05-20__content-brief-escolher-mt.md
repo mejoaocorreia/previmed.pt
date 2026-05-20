@@ -1,8 +1,10 @@
 # Content Brief — Pillar "Como escolher empresa de medicina do trabalho" — 2026-05-20
 
 > **Decisões aplicadas (2026-05-20):**
-> - **Brand voice**: usar "Medicina do Trabalho" (forma canónica, alinhada com a query Google). Glossário [`SEO_GLOSSARY.md#query`](../SEO_GLOSSARY.md#query).
-> - **Autor**: pessoa real do quadro Previmed (nome + cargo + foto + LinkedIn). Para este cluster: **médico do trabalho** do quadro. Nome a confirmar com utilizador. Glossário [`SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness`](../SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness).
+> - **Brand voice**: "Medicina do Trabalho" (canónica). [`SEO_GLOSSARY.md#query`](../SEO_GLOSSARY.md#query).
+> - **Autor (PLACEHOLDER — substituir antes de publicar)**: **Dr. Miguel Henriques** — Diretor Clínico, Medicina do Trabalho.
+>
+> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por médico do trabalho real do quadro Previmed (com foto + LinkedIn) antes de publicar. Saúde ocupacional cai em [YMYL](../SEO_GLOSSARY.md#ymyl-your-money-or-your-life) — publicar com autor falso viola [E-E-A-T](../SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) e tem risco de penalização Google.
 
 ## Purpose
 

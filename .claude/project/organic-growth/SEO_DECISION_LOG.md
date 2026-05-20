@@ -48,12 +48,12 @@
 
 - **Contexto**: os pillars P1 vão ser publicados com schema [Article](./SEO_GLOSSARY.md#schema-markup). O campo `author` pode ser pessoa real, organização ou ausente. Saúde ocupacional cai em [YMYL](./SEO_GLOSSARY.md#ymyl-your-money-or-your-life) — Google aplica filtro [E-E-A-T](./SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) mais rigoroso.
 - **Decisão**: autor identificado é **pessoa real do quadro Previmed**, com nome + cargo + foto + LinkedIn. SEPRI (concorrente que domina AIO Q1) usa este padrão.
-- **Sub-decisão pendente**: **quem por cluster**. Sugestão por afinidade temática:
-  - Q1 (Medicina do Trabalho) + Q5 (Como escolher MT) → médico do trabalho do quadro.
-  - Q2 (Segurança no Trabalho) → técnico superior de segurança no trabalho.
-  - Q3 (HACCP) → técnico especialista em segurança alimentar.
-  - Q4 (Formação 40h) → responsável de formação / pedagógico DGERT.
-  - **Nomes concretos a confirmar com o utilizador.**
+- **Sub-decisão (2026-05-20)**: 4 **placeholders fictícios** com cargos diretivos para arrancar o copy, **a substituir por pessoas reais antes de publicar**:
+  - Q1 (Medicina do Trabalho) + Q5 (Como escolher MT) → **Dr. Miguel Henriques** (Diretor Clínico, Medicina do Trabalho).
+  - Q2 (Segurança no Trabalho) → **Eng.ª Sara Vilela** (Diretora de Segurança e Saúde no Trabalho).
+  - Q3 (HACCP) → **Eng.ª Carla Tavares** (Diretora de Segurança Alimentar).
+  - Q4 (Formação 40h) → **Dra. Inês Carvalho** (Diretora Pedagógica, DGERT).
+- ⚠️ **Aviso E-E-A-T**: nomes fictícios apenas para fluxo editorial. **Publicar com autores falsos viola E-E-A-T do Google e tem risco de penalização para YMYL** (saúde ocupacional cai aqui — ver [`SEO_GLOSSARY.md#ymyl-your-money-or-your-life`](./SEO_GLOSSARY.md#ymyl-your-money-or-your-life)). Antes de cada publicação, substituir por: nome real + cargo + foto + perfil LinkedIn.
 - **Porquê**: [E-E-A-T](./SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) é forte para YMYL. Autor real e identificável é o sinal mais barato e mais potente para Previmed entrar em AIO. Schema `Person` permite ao Google ligar o autor a credenciais (LinkedIn `sameAs`).
 - **Alternativas consideradas**: (a) "Equipa Editorial Previmed" como Organization — rejeitado, perde sinal individual. (b) Sem autor declarado — rejeitado, fraco em YMYL.
 - **Origem**: discussão com utilizador 2026-05-20 + análise em `reports/2026-05-20__competitor-deep-dive.md` §M2.

@@ -1,8 +1,10 @@
 # Content Brief — Pillar "Formação obrigatória 40h" (Q4) — 2026-05-20
 
 > **Decisões aplicadas (2026-05-20):**
-> - **Brand voice**: "Formação Contínua Obrigatória" / "40 horas" (canónica, alinhada com Lei 93/2019). Ver [`SEO_GLOSSARY.md#lei-93-2019`](../SEO_GLOSSARY.md#lei-93-2019).
-> - **Autor**: pessoa real do quadro — para este cluster, **responsável de formação / pedagógico DGERT**. Nome a confirmar. Ver [`SEO_GLOSSARY.md#dgert`](../SEO_GLOSSARY.md#acrónimos-de-entidades-portuguesas).
+> - **Brand voice**: "Formação Contínua Obrigatória" / "40 horas" (Lei 93/2019). [`SEO_GLOSSARY.md#lei-93-2019`](../SEO_GLOSSARY.md#lei-93-2019).
+> - **Autor (PLACEHOLDER — substituir antes de publicar)**: **Dra. Inês Carvalho** — Diretora Pedagógica (DGERT).
+>
+> ⚠️ **Nome fictício para arrancar fluxo editorial.** Substituir por responsável de formação real do quadro (com foto + LinkedIn) antes de publicar. [YMYL](../SEO_GLOSSARY.md#ymyl-your-money-or-your-life) + [E-E-A-T](../SEO_GLOSSARY.md#e-e-a-t-experience-expertise-authoritativeness-trustworthiness) — autor falso tem risco de penalização Google.
 
 > Padrões comuns no brief de referência [`2026-05-20__content-brief-escolher-mt.md`](./2026-05-20__content-brief-escolher-mt.md). Aqui apenas o específico do cluster Q4.
 >

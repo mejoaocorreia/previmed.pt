@@ -23,7 +23,7 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 | Setup GSC/GA4/PSI | ⏳ execução pendente | Checklist em `SETUP_GSC_GA4.md`. Lado utilizador. |
 | AIO expansion (5 queries) | ✅ concluída | Ver `reports/2026-05-20__aio-expansion.md`. |
 | Baseline metrics | ⛔ bloqueado | Precisa de 28d de GSC após ligação. |
-| Briefs P1 (5 pillars) | ✅ todos escritos | 5 briefs em `reports/2026-05-20__content-brief-*.md`. Brand voice + autoria decididas 2026-05-20. **Pendente**: confirmar nomes concretos dos autores por cluster. |
+| Briefs P1 (5 pillars) | ✅ todos escritos | 5 briefs em `reports/`. Brand voice + autoria decididas. **Placeholders** Dr. Miguel Henriques (Q1/Q5), Eng.ª Sara Vilela (Q2), Eng.ª Carla Tavares (Q3), Dra. Inês Carvalho (Q4). ⚠️ **Substituir por pessoas reais antes de publicar** (YMYL + E-E-A-T). |
 | Glossário plain-language | ✅ criado | `SEO_GLOSSARY.md` — explicação de todo o jargão (AIO, E-E-A-T, cluster, etc.). Vivo. |
 
 ## Último relatório
@@ -64,7 +64,7 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 ## Bloqueios atuais
 
 - **Setup GSC/GA4** — bloqueia baseline metrics e validação de hipóteses do `STRATEGY.md`.
-- **Nomes concretos dos autores por cluster** — bloqueia copy final dos pillars (estrutura editorial já está pronta).
+- **Substituição dos 4 placeholders por pessoas reais do quadro** — bloqueia **publicação** (não a escrita do copy). Copy pode arrancar já com placeholders; antes de cada deploy, substituir.
 - **Decisão "quando aplicar refactor WP"** — bloqueia quick wins documentados em `reports/2026-05-20__previmed-pages-audit.md`.
 
 ## Como atualizar este ficheiro
