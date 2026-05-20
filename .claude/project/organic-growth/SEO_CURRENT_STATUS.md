@@ -27,11 +27,13 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 
 ## Último relatório
 
-- **2026-05-20** — [`reports/2026-05-20__aio-expansion.md`](./reports/2026-05-20__aio-expansion.md) — análise AIO em 5 queries P1. Achados-chave:
-  - Previmed citado em 1/5 queries (Q5 `/saude-no-trabalho/`); fora dos outros 4 head terms.
-  - **Achado crítico:** AIO confirma que formação anual mudou de **35h → 40h** (Lei 93/2019).
-  - Concorrentes que dominam citações AIO: Centralmed, SEPRI, Forprev, Medilav, Ecosáude, Preveris.
-  - Conteúdo institucional (Lei 102/2009, ACT, ASAE, DGS) é altamente premiado pela AIO.
+- **2026-05-20** — [`reports/2026-05-20__competitor-deep-dive.md`](./reports/2026-05-20__competitor-deep-dive.md) — auditoria competitiva de 7 URLs (Forprev, SEPRI ×3, Centralmed ×3) + Previmed `/saude-no-trabalho/`. Achados-chave:
+  - **Centralmed = padrão ouro** em citação outbound institucional (6–8 links externos a ACT/DGS/pgdlisboa/FAO/EUR-Lex por artigo). Sem schema JSON-LD detectável — o link graph é a alavanca AIO.
+  - **SEPRI = padrão "árvore"** (1 pillar + spin-offs geográficos/tópicos cruzados). 3 URLs em AIO Q1.
+  - **Forprev** = caso mais curto (656w) que aparece em AIO via Service schema + 28 FAQs.
+  - **Previmed `/saude-no-trabalho/`** tem problemas estruturais: title duplicado, hierarquia H1→H3 quebrada, 0 links externos institucionais, schema genérico, "Medicina **No** Trabalho" no body (sem preposição "do").
+
+- **2026-05-20** — [`reports/2026-05-20__aio-expansion.md`](./reports/2026-05-20__aio-expansion.md) — análise AIO em 5 queries P1. Previmed citado em 1/5 (Q5). Achado crítico: lei 35h→40h. Concorrentes dominantes: Centralmed, SEPRI, Forprev, Medilav, Ecosáude, Preveris.
 
 ## Próximos passos
 

@@ -67,6 +67,26 @@
 - **Como validar**: crawl técnico + leitura editorial. Capturar schema, H1–H4, comprimento, links externos, frequência de palavras-chave, presença de tabelas.
 - **Próximo passo**: relatório de auditoria competitiva dedicado em `reports/`.
 
+### Padrão "Centralmed" de citação institucional outbound
+
+- **Estado**: validada (cross-confirmada em 3 páginas Centralmed em 3 clusters distintos)
+- **Origem**: [`reports/2026-05-20__competitor-deep-dive.md`](./reports/2026-05-20__competitor-deep-dive.md) §H4
+- **Impacto estimado**: alto
+- **Esforço estimado**: baixo (editorial, não técnico)
+- **Hipótese**: AIO premia páginas que linkam para fontes institucionais (ACT, DGS, pgdlisboa, FAO, EUR-Lex) mais do que páginas com schema rico. Centralmed não tem JSON-LD detectável e domina 3 clusters AIO. Densidade outbound institucional = sinal E-E-A-T forte.
+- **Como validar**: aplicar regra "4+ links externos institucionais" aos primeiros 2 briefs P1 (Q5 + Q4) e medir entrada na AIO em t+90d.
+- **Próximo passo**: SEO Lead — promover a regra fixa dos briefs (já no `SEO_BACKLOG.md`).
+
+### Padrão "SEPRI" de árvore pillar + spin-offs
+
+- **Estado**: por validar
+- **Origem**: [`reports/2026-05-20__competitor-deep-dive.md`](./reports/2026-05-20__competitor-deep-dive.md) §H1
+- **Impacto estimado**: alto
+- **Esforço estimado**: médio
+- **Hipótese**: SEPRI domina AIO Q1 com 3 URLs distintas (pillar + Lisboa + Ficha Aptidão). Padrão replicável: 1 pillar → spin-off geográfico (cidade) + spin-off tópico (sub-conceito). Multiplica share-of-citation.
+- **Como validar**: produzir 1 pillar + 2 spin-offs para o cluster Medicina do Trabalho e medir share-of-citation em t+90/180d.
+- **Próximo passo**: planear spin-offs desde início ao escrever os briefs P1 (não como afterthought).
+
 ### Vídeo curto como acelerador de citação AIO
 
 - **Estado**: hipótese

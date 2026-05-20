@@ -22,11 +22,14 @@
 
 ## Quick wins
 
+- `todo` `P1` Corrigir title duplicado `/saude-no-trabalho/` ("Previmed - PrevimedPrevimed" → "Medicina do Trabalho — Previmed"). Origem: `reports/2026-05-20__competitor-deep-dive.md` §F1.
+- `todo` `P2` Adicionar H2 à página `/saude-no-trabalho/` (atualmente salta H1→H3). Origem: §F3.
 - `todo` `P2` Proteger URL `/saude-no-trabalho/` — já citada por AIO. Não mexer sem plano de redirect. Origem: `reports/2026-05-20__aio-expansion.md` §Q5.
 
 ## Technical blockers
 
 - `todo` `P2` Atualizar `STRATEGY_KEYWORDS.md` cluster "Formação 35h" → 40h. Origem: `reports/2026-05-20__aio-expansion.md` §C1+§Q4.
+- `todo` `P2` Auditoria rápida páginas core Previmed (`/seguranca-trabalho/`, HACCP, formação) — repetição de problemas (title duplicado, H2 ausentes, schema genérico, 0 ext links)? Origem: `reports/2026-05-20__competitor-deep-dive.md` §T1.
 
 ## Content opportunities
 
@@ -47,7 +50,11 @@
 
 ## Schema/entity improvements
 
-- `todo` `P2` Adicionar schema FAQPage + Article (HowTo onde aplicável) em todas as páginas pillar P1, com `citation` para Lei 102/2009, ACT, ASAE. Origem: `reports/2026-05-20__aio-expansion.md` §T3.
+- `todo` `P1` **Regra fixa dos briefs P1:** mínimo 4 links externos institucionais por pillar (ACT + pgdlisboa Lei 102/2009 + 2 outros conforme tema: DGS, DGERT, ASAE, DGAV, FAO/Codex, EUR-Lex, APSEI, OA). Origem: `reports/2026-05-20__competitor-deep-dive.md` §C0.
+- `todo` `P1` **Regra fixa dos briefs P1:** Schema por tipo de página — Article + FAQPage em pillars informacionais; HowTo em "como escolher" e HACCP 7 princípios; Service em página de serviço comercial. Origem: §C3.
+- `todo` `P2` Adicionar `datePublished` + `dateModified` ao schema de todas as páginas pillar. Origem: §T2.
+- `todo` `P2` Estratégia "árvore" SEPRI — cada pillar P1 deve ter 2–3 spin-offs planeados (geo / tópico). Origem: §A1.
+- `todo` `P2` Adicionar `author` (Person) com identificação real ao schema Article — decidir quem assina. Origem: §C5+Decision #2.
 
 ## Local SEO
 
