@@ -2,7 +2,8 @@
 
 > **Lote 2.3 da Fase 2.** Comparativo + recomendação para o tool de dados de keywords/SERPs/competidores.
 > Data: 2026-05-20.
-> Estado: **proposta, aguarda decisão do utilizador**.
+> Estado: ✅ **DECIDIDO — Cenário Z (orçamento zero)**. Utilizador descartou todas as opções pagas (A–F). Stack mantém-se apenas com ferramentas gratuitas.
+> Decisão completa registada em [`SEO_DECISION_LOG.md`](./SEO_DECISION_LOG.md).
 
 ---
 
@@ -134,7 +135,40 @@ Ahrefs/Semrush ganham por larga margem. Mas o `STRATEGY.md` define que **a equip
 
 ---
 
-## 9. Decisão pendente
+## 9. Decisão tomada
 
-> **Para fechar este lote**: utilizador decide entre **Cenário A (recomendado)**, **B**, **C**, **D**, **E**, ou **F** acima — ou pede ajuste.
-> Após decisão, registar em `DECISION_LOG.md` e avançar para acções da secção 6.
+> ✅ **Cenário Z — Orçamento zero.** Utilizador decidiu em 2026-05-20: *"se não houver nada gratuito, não quero nada"*.
+>
+> Stack adotada (tudo grátis):
+> - **Google Search Console** — queries reais com cliques/impressões (fonte de verdade quando ligado).
+> - **GA4** — comportamento pós-clique.
+> - **Google Keyword Planner** — volumes em buckets largos (10–100, 100–1k, 1k–10k) via conta Ads ativa.
+> - **Playwright MCP** — captura manual de SERPs e Modo IA expandido (já demonstrado nos relatórios de 2026-05-20).
+> - **PageSpeed Insights API** — Core Web Vitals (free, requer API key).
+>
+> ## Trade-offs aceites
+>
+> - **Sem volumes finos** — Keyword Planner devolve ranges, não números exatos.
+> - **Sem competitor ranked keywords automatizadas** — só sabemos o que concorrentes ranqueiam por inspeção manual ou capturas Playwright dirigidas.
+> - **Sem rank tracking automatizado** — GSC mostra queries onde Previmed **já** ranqueia; para queries onde não ranqueia, fazemos checks manuais periódicos via Playwright.
+> - **Sem backlinks data** — descoberta de backlinks por GSC (links recebidos) + inspeção manual de competidores. Sem índice profundo (Ahrefs).
+> - **Sem dashboard SaaS** — relatórios produzidos via Claude/markdown em `reports/`.
+>
+> ## Quando reavaliar
+>
+> Reavaliar a decisão se:
+> - Volume de queries necessário cresce significativamente (ex. 10+ pillars, rank tracking diário).
+> - Briefs precisarem de competitor ranked keywords em massa.
+> - Auditoria de backlinks for crítica para compliance / link building.
+> - Aparecer free tier de algum tool que cubra parte das lacunas.
+>
+> ## Plano de implementação (revisto)
+>
+> Secção 6 acima está obsoleta. Plano atualizado:
+>
+> | # | Ação | Responsável | Estado |
+> |---|---|---|---|
+> | 1 | Executar Lote 2.4 (`SETUP_GSC_GA4.md`) — ligar GSC, GA4, Site Kit, criar API key PSI | João | ⏳ pendente |
+> | 2 | Garantir conta Google Ads ativa (mesmo sem spend) para destravar Keyword Planner | João | ⏳ pendente |
+> | 3 | Atualizar `SEO_TOOLING_MCP_STACK.md` para refletir stack zero-cost | Claude | ✅ a fazer agora |
+> | 4 | Briefs P1 começam imediatamente — não dependem de keyword data tool para arrancar (estratégia + competitor deep-dive já dão input suficiente) | Claude + João | desbloqueado |

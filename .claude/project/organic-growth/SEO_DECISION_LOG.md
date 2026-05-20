@@ -34,6 +34,16 @@
 
 ## Decisões
 
+### 2026-05-20 — Tool keyword data: orçamento zero (Cenário Z)
+
+- **Contexto**: 6 cenários avaliados em [`DECISION_KEYWORD_DATA_TOOL.md`](./DECISION_KEYWORD_DATA_TOOL.md) (A=DataForSEO ~$300/ano, B=SerpAPI ~$300, C=Ahrefs Lite ~$1 548, D=Semrush ~$1 668, E=SE Ranking ~$660, F=Híbrido ~$650). Recomendação interna era Cenário A.
+- **Decisão**: nenhum tool pago. Stack só com ferramentas gratuitas: **Google Search Console + GA4 + Google Keyword Planner + Playwright MCP + PageSpeed Insights API**.
+- **Alternativas consideradas**: todas as 6 opções pagas A–F. Rejeitadas todas — preferência declarada por orçamento zero ("*se não houver nada gratuito, não quero nada*").
+- **Trade-offs aceites**: sem volumes finos (buckets de Keyword Planner), sem competitor ranked keywords automatizadas, sem rank tracking automatizado, sem backlinks data, sem dashboard SaaS. Compensações: GSC = fonte de verdade quando ligado; Playwright = SERPs ad-hoc; relatórios markdown em `reports/`.
+- **Origem**: discussão 2026-05-20 + [`DECISION_KEYWORD_DATA_TOOL.md`](./DECISION_KEYWORD_DATA_TOOL.md).
+- **Revisão**: reavaliar se (a) volume de queries cresce significativamente, (b) briefs precisam de competitor ranked KWs em massa, (c) auditoria de backlinks se torna crítica, (d) aparecer free tier viável.
+- **Decisor**: utilizador.
+
 ### 2026-05-20 — Cluster "Formação 35h" passa a refletir 35→40h
 
 - **Contexto**: AIO Q4 (`formação 35 horas obrigatória`) confirma que Lei 93/2019 alterou Art.º 131.º do Código do Trabalho: o mínimo de formação contínua passou de **35 para 40 horas anuais** por trabalhador. `STRATEGY_KEYWORDS.md` (linhas 213–216) ainda usa "35h" — refletia a query do utilizador, não o referencial legal atual.

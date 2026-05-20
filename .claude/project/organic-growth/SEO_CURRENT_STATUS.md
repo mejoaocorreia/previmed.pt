@@ -19,7 +19,7 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 |---|---|---|
 | Estratégia | ✅ concluída | Ver `STRATEGY.md`. |
 | Auditoria técnica baseline | ✅ concluída | `AUDIT_PREVIMED_BASELINE.md`. |
-| Keyword data tool | ⏳ decisão pendente | Aguarda escolha A–F em `DECISION_KEYWORD_DATA_TOOL.md`. |
+| Keyword data tool | ✅ decidido | **Orçamento zero**. Stack só com GSC + GA4 + Keyword Planner + Playwright + PSI. Ver `SEO_DECISION_LOG.md` 2026-05-20. |
 | Setup GSC/GA4/PSI | ⏳ execução pendente | Checklist em `SETUP_GSC_GA4.md`. Lado utilizador. |
 | AIO expansion (5 queries) | ✅ concluída | Ver `reports/2026-05-20__aio-expansion.md`. |
 | Baseline metrics | ⛔ bloqueado | Precisa de 28d de GSC após ligação. |
@@ -37,12 +37,11 @@ Fase 1 (estratégia) fechada. Fase 2 a recolher dados antes de iniciar Fase 3 (p
 
 ## Próximos passos
 
-1. Utilizador decide entre cenários A–F em `DECISION_KEYWORD_DATA_TOOL.md`.
-2. Utilizador executa checklist em `SETUP_GSC_GA4.md` (ligar GSC/GA4/Site Kit + API PSI).
-3. Decidir ordem de produção dos 5 briefs P1 (ver `reports/2026-05-20__aio-expansion.md` §Decisions Needed #2).
-4. Atualizar `STRATEGY_KEYWORDS.md` cluster Formação para 35→40h (decisão registada em `SEO_DECISION_LOG.md`).
-5. Após 28d de coleta GSC: produzir baseline metrics (novo relatório datado).
-6. Auditoria competitiva: forprev.pt, sepri.pt, centralmed.pt (próximo relatório).
+1. Utilizador executa checklist em `SETUP_GSC_GA4.md` (ligar GSC/GA4/Site Kit + API PSI) + garantir conta Google Ads ativa (mesmo sem spend) para Keyword Planner.
+2. Decidir ordem de produção dos 5 briefs P1 + brand voice + autoria (ver `reports/2026-05-20__competitor-deep-dive.md` §Decisions Needed).
+3. Atualizar `STRATEGY_KEYWORDS.md` cluster Formação para 35→40h.
+4. Após 28d de coleta GSC: produzir baseline metrics (novo relatório datado).
+5. Atualizar `SEO_TOOLING_MCP_STACK.md` para refletir stack zero-cost (já decidido).
 
 ## Bloqueios atuais
 

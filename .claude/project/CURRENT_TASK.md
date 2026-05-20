@@ -12,7 +12,9 @@ Adicionalmente: **Change Management aplicado** — sistema Organic Growth passou
 
 ## Estado
 
-idle — aguarda (1) decisão tua em 2.3 (DataForSEO vs alternativa) e (2) execução tua de 2.4 (ligar GSC, GA4, Site Kit, criar API key PSI) e (3) decisão de ordem de produção dos 5 briefs P1 (ver `reports/2026-05-20__aio-expansion.md` §Decisions Needed).
+idle — aguarda (1) execução tua de 2.4 (ligar GSC, GA4, Site Kit, criar API key PSI + conta Google Ads ativa para Keyword Planner) e (2) decisão de ordem de produção dos 5 briefs P1 + brand voice "No/do trabalho" + autoria schema (ver `reports/2026-05-20__competitor-deep-dive.md` §Decisions Needed).
+
+Lote 2.3 fechado: tool keyword data = **orçamento zero** (Cenário Z). Stack: GSC + GA4 + Keyword Planner + Playwright + PSI.
 
 ## Ficheiros alterados (desta sessão)
 
