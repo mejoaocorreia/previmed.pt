@@ -6,11 +6,11 @@ Construir equipa SEO/Organic Growth para Previmed (HSST B2B nacional) e produzir
 
 ## Lote atual
 
-**Lote 1.5 concluído. Fase 1 fechada.**
+**Fase 2 — Dados.** Sub-lotes 2.1 (auditoria técnica previmed.pt baseline) e 2.2 (auditoria AIO expandida em 5 queries) a correr em paralelo.
 
 ## Estado
 
-idle — aguarda direção do utilizador para Fase 2 ou Fase 3
+in-progress — 2.1 + 2.2 ativos. Aguardam decisão tua em 2.3 (tool de keyword data) e ação tua em 2.4 (acessos GSC/GA4).
 
 ## Ficheiros alterados (desta sessão)
 
