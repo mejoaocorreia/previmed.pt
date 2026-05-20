@@ -6,17 +6,19 @@ Construir equipa SEO/Organic Growth para Previmed (HSST B2B nacional) e produzir
 
 ## Lote atual
 
-**Fase 2 — Dados.** Sub-lotes 2.1 (auditoria técnica previmed.pt baseline) e 2.2 (auditoria AIO expandida em 5 queries) a correr em paralelo.
+**Fase 2 — Dados.** 2.1, 2.3, 2.4 fechados. 2.2 (AIO) bloqueado por reload do MCP Playwright. 2.5 (baseline metrics) bloqueado até GSC ter 28d de coleta.
 
 ## Estado
 
-in-progress — 2.1 + 2.2 ativos. Aguardam decisão tua em 2.3 (tool de keyword data) e ação tua em 2.4 (acessos GSC/GA4).
+idle — aguarda (1) reload Claude Code para arrancar 2.2 e (2) decisão tua em 2.3 (DataForSEO vs alternativa) e (3) execução tua de 2.4 (ligar GSC, GA4, Site Kit, criar API key PSI).
 
 ## Ficheiros alterados (desta sessão)
 
-- `.mcp.json` — removida flag inválida `--browser chromium` (Playwright MCP só aceita chrome|firefox|webkit|msedge; defaultpara chrome-for-testing após `install-browser`).
-- `.gitignore` — adicionado `.playwright-mcp/`.
-- `.claude/project/organic-growth/STRATEGY_COMPETITORS.md` — novo (Lote 1.4).
+- `.mcp.json` — adicionado `--executable-path` apontando para `chromium-1224\chrome-win64\chrome.exe` (nova versão do MCP procura noutro path).
+- `.claude/project/organic-growth/AUDIT_PREVIMED_BASELINE.md` — novo (Lote 2.1).
+- `.claude/project/organic-growth/DECISION_KEYWORD_DATA_TOOL.md` — novo (Lote 2.3).
+- `.claude/project/organic-growth/SETUP_GSC_GA4.md` — novo (Lote 2.4).
+- `TASK_SNAPSHOT.md` — preenchido na transição Fase 1 → Fase 2.
 
 ## Feito
 
@@ -27,15 +29,21 @@ in-progress — 2.1 + 2.2 ativos. Aguardam decisão tua em 2.3 (tool de keyword 
 - MCPs Tier A: Playwright (chrome-for-testing instalado) + Chrome DevTools.
 - Lote 1.4: `STRATEGY_COMPETITORS.md` — 12 SERPs capturadas via Playwright, 5 categorias de concorrentes, 9 lacunas priorizadas, posicionamento Previmed baseline.
 - Lote 1.5: `STRATEGY.md` — documento mestre da Fase 1, consolida audiences + IA + keywords + competitors + roadmap + KPIs + decisões em aberto.
+- Initial commit `d2718fd` — 122 ficheiros, Fase 1 completa.
+- Lote 2.1: `AUDIT_PREVIMED_BASELINE.md` — auditoria técnica do site atual, achados críticos (titles partidos, sem hub editorial, sem Service schema). Commit `89bb2e7`.
+- Lote 2.3: `DECISION_KEYWORD_DATA_TOOL.md` — recomendação DataForSEO + GSC + Playwright + Keyword Planner. Aguarda decisão.
+- Lote 2.4: `SETUP_GSC_GA4.md` — guia passo-a-passo para o utilizador ligar GSC, GA4, Site Kit, PSI API.
 
 ## Próximo (a confirmar com utilizador)
 
-Fase 1 está completa (5/5 lotes). Próximas opções:
+Próximas ações em ordem:
 
-- **Fase 2:** infraestrutura de dados (GSC, GA4, decisão Ahrefs/DataForSEO, auditoria AIO expandida, crawl técnico previmed.pt actual).
-- **Fase 3:** briefs de conteúdo P1 (6 pillars + 3 quick wins L1/L2/L3).
-- **Fase 4:** decisões técnicas WordPress (plugin SEO, LMS, page builder, form proposta).
-- Alternativa: auditoria AI Overview standalone como ponte (capturar Modo IA expandido em 5 queries).
+1. **Reiniciar Claude Code** para reload do MCP Playwright (necessário para 2.2).
+2. **Decidir** entre cenários A/B/C/D/E/F em `DECISION_KEYWORD_DATA_TOOL.md`.
+3. **Executar** checklist em `SETUP_GSC_GA4.md` (lado utilizador).
+4. Após reload, fechar **Lote 2.2** (AIO expandida em 5 queries via Playwright).
+5. Depois de 28d coleta GSC → **Lote 2.5** (baseline metrics).
+6. Quando Fase 2 fechar → escolher Fase 3 (briefs P1) ou Fase 4 (decisões técnicas WP).
 
 ## Retoma (se a sessão cair)
 
