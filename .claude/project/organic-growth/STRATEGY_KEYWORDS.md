@@ -204,20 +204,34 @@
 
 ---
 
-## Cluster 9 — Formação 35 horas (obrigatória trabalhadores)
+## Cluster 9 — Formação contínua obrigatória (35h legado → 40h atual)
 
-**Target hub:** `/formacao/` + `/recursos/guias/formacao-35-horas-obrigatoria/`
+**Target hub:** `/formacao/` + `/recursos/guias/formacao-obrigatoria-40-horas/`
+
+> ⚠️ **Nota legal — atualização 2026-05-20.** A Lei 93/2019 alterou o Art.º 131.º do Código do Trabalho: o mínimo de formação contínua obrigatória passou de **35 para 40 horas anuais** por trabalhador. A AIO do Google já corrige automaticamente a query "35 horas" para "40 horas". Decisão registada em `SEO_DECISION_LOG.md` 2026-05-20.
+>
+> **Política para este cluster:**
+> 1. Manter slug/título da pillar com "40 horas" como referencial atual.
+> 2. Manter a query "35 horas" trackeada por volume residual e por ser a forma popular.
+> 3. Cada peça de conteúdo deste cluster abre com correção 35→40 explícita + citação Lei 93/2019 + Nota Técnica 9 da ACT.
+> 4. Conteúdo "35 horas" antigo deve ser auditado (404, 301 ou refresh) — ver `SEO_BACKLOG.md` cluster `[Technical blocker]`.
 
 | Query | Intenção | Funil | Vol. est. | Difi. | Prio | Target | Notas |
 |---|---|---|---|---|---|---|---|
-| formação 35 horas | INFO+TRANS | TOP/BOT | A | ALTA | P1 | pillar + `/formacao/catalogo/` | Head term, ambíguo: pode ser intenção informacional (RH) ou compra (formando). |
-| formação 35 horas obrigatória | INFO | TOP | A | ALTA | P1 | pillar | "Sou obrigado?" — Q crítica de RH. |
+| formação 35 horas | INFO+TRANS | TOP/BOT | A | ALTA | P1 | pillar 40h (com nota correção) | Head term legado, ainda popular. Pillar tem de corrigir para 40h logo no H2 inicial. |
+| formação 35 horas obrigatória | INFO | TOP | A | ALTA | P1 | pillar 40h | "Sou obrigado?" — Q crítica de RH. AIO corrige automaticamente. |
 | formação 35 horas online | TRANS | BOT | A | ALTA | P1 | `/formacao/modalidades/online/` | Forte intenção compra; head term comercial. |
 | formação 35 horas preço | TRANS | BOT | M | MÉDIA | P1 | `/formacao/catalogo/` | Dar preço. |
 | formação 35 horas DGERT | TRANS | BOT | M | MÉDIA | P2 | `/formacao/dgert/` | Validação certificação. |
-| formação contínua trabalhadores | INFO | TOP | M | MÉDIA | P3 | pillar | Sinónimo formal. |
-| formação 35 horas quem precisa | INFO | TOP | M | BAIXA | P2 | pillar (secção) | Snippet. |
-| isenção formação 35 horas | INFO | TOP | M | BAIXA | P3 | pillar (secção) | Long-tail compliance. |
+| **formação 40 horas obrigatória** | INFO | TOP | M | MÉDIA | P1 | pillar 40h | **Variante atualizada.** Volume previsivelmente menor que "35h" mas crescerá. |
+| **formação contínua 40 horas** | INFO | TOP | B | MÉDIA | P2 | pillar 40h | Variante formal. |
+| **Lei 93/2019 formação** | INFO | TOP | B | BAIXA | P2 | pillar 40h (secção legal) | Q jurídica precisa. Snippet target. |
+| **Art.º 131.º Código do Trabalho** | INFO | TOP | B | BAIXA | P3 | pillar 40h (secção legal) | Q jurídica precisa. |
+| formação contínua trabalhadores | INFO | TOP | M | MÉDIA | P3 | pillar 40h | Sinónimo formal. |
+| formação 35 horas quem precisa | INFO | TOP | M | BAIXA | P2 | pillar 40h (secção) | Snippet. |
+| isenção formação 35 horas | INFO | TOP | M | BAIXA | P3 | pillar 40h (secção) | Long-tail compliance. |
+| **40 horas formação obrigatória empresas** | INFO+COMM | TOP/MID | B | MÉDIA | P2 | pillar 40h | Q empresa-side (RH). |
+| **coima incumprimento formação obrigatória** | INFO | TOP | B | BAIXA | P3 | pillar 40h (secção consequências) | Long-tail compliance/risco. |
 
 ---
 
