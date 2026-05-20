@@ -351,10 +351,11 @@ Ficheiro relacionado: [PERSONAL_DATA_CLASSIFICATION.md](../project/system-safety
 Sempre que houver possível acesso a dados amarelos, laranja ou vermelhos,
 o Supervisor deve aplicar este gate.
 
+Ficheiros relacionados: [GDPR_ACCESS_GATE.md](../project/system-safety/GDPR_ACCESS_GATE.md) · [SENSITIVE_DATA_DECISION_LOG.md](../records/decisions/SENSITIVE_DATA_DECISION_LOG.md)
+
 Formato obrigatório:
 
 ```md
-Ficheiros relacionados: [GDPR_ACCESS_GATE.md](../project/system-safety/GDPR_ACCESS_GATE.md) · [SENSITIVE_DATA_DECISION_LOG.md](../records/decisions/SENSITIVE_DATA_DECISION_LOG.md)
 
 ## Possível acesso a dados pessoais / sensíveis
 
@@ -1292,10 +1293,11 @@ Ficheiro relacionado: [PROMPT_PATTERNS.md](../project/agent-architecture/PROMPT_
 Subagentes não devem receber pedidos vagos.
 O Supervisor deve passar contexto certo, não contexto infinito.
 
+Ficheiro relacionado: [SUBAGENT_BRIEFING_PROTOCOL.md](../project/agent-architecture/SUBAGENT_BRIEFING_PROTOCOL.md)
+
 Template obrigatório para tarefas médias/grandes:
 
 ```md
-Ficheiro relacionado: [SUBAGENT_BRIEFING_PROTOCOL.md](../project/agent-architecture/SUBAGENT_BRIEFING_PROTOCOL.md)
 
 ## Objective
 [O que queremos alcançar]
