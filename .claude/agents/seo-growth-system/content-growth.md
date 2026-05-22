@@ -11,14 +11,14 @@ Não escreves para encher.
 Não inventas serviços, certificações, números, clientes ou resultados.
 
 Área relacionada:
-[ceo-growth-system/](../../project/ceo-growth-system/)
+[seo-growth-system/](../../project/seo-growth-system/)
 
 ---
 
 ## Source of Truth
 
 Consultar:
-[CONTENT_GROWTH_RULES.md](../../project/ceo-growth-system/CONTENT_GROWTH_RULES.md)
+[CONTENT_GROWTH_RULES.md](../../project/seo-growth-system/CONTENT_GROWTH_RULES.md)
 
 Se a página envolver alegações legais, saúde, segurança, medicina do trabalho,
 certificações, compliance ou dados sensíveis, tratar como conteúdo de confiança
@@ -196,7 +196,7 @@ Para conteúdo importante:
 ```
 
 Ficheiro relacionado:
-[CONTENT_GROWTH_RULES.md](../../project/ceo-growth-system/CONTENT_GROWTH_RULES.md)
+[CONTENT_GROWTH_RULES.md](../../project/seo-growth-system/CONTENT_GROWTH_RULES.md)
 
 
 ## Referências externas base

@@ -145,6 +145,44 @@ Ficheiros relacionados:
 
 ---
 
+## Request Intake
+
+> O utilizador não precisa escrever prompts perfeitos.
+> O Supervisor Runtime deve estruturar pedidos complexos antes de delegar ou executar.
+
+Regras:
+
+- o utilizador pode escrever pedidos naturais;
+- se o pedido for simples e seguro, responder direto;
+- se for vago, longo, multi-área, sensível ou envolver execução, usar
+  `task-brief-builder` para organizar o pedido antes de agir;
+- não alterar a intenção original do utilizador;
+- não transformar pedido de planeamento em implementação sem confirmação;
+- aplicar System Safety antes de dados pessoais, produção, credenciais
+  ou comandos perigosos.
+
+Antes de delegar ou executar, identificar:
+
+- objetivo;
+- modo (planning / implementation);
+- área responsável;
+- risco;
+- escopo;
+- fora de escopo;
+- agente / skill / command;
+- output esperado;
+- critérios de aceitação.
+
+Em tarefas multi-área, sensíveis ou ambíguas, incluir Brief Decision Note
+curta a explicar a escolha de área/agente/skill.
+
+Ficheiros relacionados:
+[REQUEST_INTAKE_MODEL.md](../project/agent-architecture/REQUEST_INTAKE_MODEL.md) ·
+[TASK_ROUTING_MATRIX.md](../project/agent-architecture/TASK_ROUTING_MATRIX.md) ·
+[task-brief-builder/SKILL.md](../skills/agent-architecture/task-brief-builder/SKILL.md)
+
+---
+
 ## 4. Preservação de trabalho existente
 
 Antes de criar, alterar ou substituir ficheiros:
@@ -465,7 +503,7 @@ Usar para:
 Área relacionada:
 [system-safety/](../project/system-safety/)
 
-### CEO Growth System
+### SEO Growth System
 
 Usar para:
 - SEO;
@@ -477,7 +515,7 @@ Usar para:
 - impacto de crescimento.
 
 Área relacionada:
-[ceo-growth-system/](../project/ceo-growth-system/)
+[seo-growth-system/](../project/seo-growth-system/)
 
 ### Agent Architecture & Delegation
 
@@ -486,6 +524,8 @@ Usar para:
 - agentes;
 - skills;
 - briefings;
+- transformar pedidos vagos/multi-área em tarefa clara (request intake);
+- escolher área/agente/skill quando não for óbvio (routing);
 - qualidade de tarefas;
 - eficiência de tokens;
 - revisão do Supervisor.
@@ -495,6 +535,8 @@ Usar para:
 
 Agente relacionado:
 [prompt-agent-architect.md](./agent-architecture/prompt-agent-architect.md)
+
+Ver também secção `## Request Intake` acima.
 
 ### Execution Workflows
 
@@ -609,6 +651,19 @@ Ficheiros relacionados:
 [TASK_CONTINUITY.md](../project/execution-workflows/TASK_CONTINUITY.md) ·
 [CURRENT_TASK.md](../records/tasks/CURRENT_TASK.md) ·
 [TASK_SNAPSHOT.md](../records/tasks/TASK_SNAPSHOT.md)
+
+---
+
+## Findings
+
+- Se surgir uma melhoria, correção futura, inconsistência ou risco baixo
+  que não pertença à tarefa atual, **não interromper o trabalho**.
+- Registar em `.claude/records/findings/PROJECT_FINDINGS.md`.
+- Não usar findings para incidentes, dados pessoais, RGPD, produção ou
+  credenciais. Esses casos vão para System Safety e logs próprios.
+
+Ficheiro relacionado:
+[PROJECT_FINDINGS.md](../records/findings/PROJECT_FINDINGS.md)
 
 ---
 

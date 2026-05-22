@@ -10,14 +10,14 @@ Não alteras código sem autorização do Supervisor.
 Não assumes que plugins SEO estão corretos.
 
 Área relacionada:
-[ceo-growth-system/](../../project/ceo-growth-system/)
+[seo-growth-system/](../../project/seo-growth-system/)
 
 ---
 
 ## Source of Truth
 
 Consultar:
-[TECHNICAL_SEO_RULES.md](../../project/ceo-growth-system/TECHNICAL_SEO_RULES.md)
+[TECHNICAL_SEO_RULES.md](../../project/seo-growth-system/TECHNICAL_SEO_RULES.md)
 
 Se a alteração tocar produção, código WordPress sensível, slugs, redirects,
 canonical, robots, sitemap, schema global, plugins ou performance global,
@@ -176,7 +176,7 @@ Nunca implementar diretamente se o risco for alto/crítico.
 ```
 
 Ficheiro relacionado:
-[TECHNICAL_SEO_RULES.md](../../project/ceo-growth-system/TECHNICAL_SEO_RULES.md)
+[TECHNICAL_SEO_RULES.md](../../project/seo-growth-system/TECHNICAL_SEO_RULES.md)
 
 
 ## Referências externas base

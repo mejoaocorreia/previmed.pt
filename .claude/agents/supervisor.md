@@ -167,7 +167,7 @@ regras suficientes para funcionar sozinho.
 O projeto fica organizado por seis áreas principais:
 
 1. System Safety & Data Protection
-2. CEO Growth System
+2. SEO Growth System
 3. Agent Architecture & Delegation
 4. Execution Workflows
 5. WordPress Engineering
@@ -1036,7 +1036,7 @@ Ficheiros relacionados:
 
 ---
 
-# 2. CEO Growth System
+# 2. SEO Growth System
 
 <!--
 NOTA EXPLICATIVA PARA HUMANOS:
@@ -1046,9 +1046,9 @@ O objetivo é olhar para SEO, conteúdo, estrutura, reputação, concorrência
 e conversão como temas de direção, não apenas como tarefas técnicas.
 -->
 
-CEO Growth System é a área estratégica de crescimento orgânico e visibilidade.
+SEO Growth System é a área estratégica de crescimento orgânico e visibilidade.
 
-Área relacionada: [ceo-growth-system/](../project/ceo-growth-system/)
+Área relacionada: [seo-growth-system/](../project/seo-growth-system/)
 
 Serve para responder:
 - O site está organizado para gerar confiança?
@@ -1062,11 +1062,11 @@ Serve para responder:
 - A alteração pode prejudicar tráfego, indexação ou reputação?
 
 O Supervisor não deve fazer SEO profundo sozinho quando houver impacto relevante.
-Deve chamar o SEO Lead / CEO Growth System.
+Deve chamar o SEO Lead / SEO Growth System.
 
-CEO Growth System não significa marca pessoal do CEO.
-Significa crescimento digital visto ao nível de direção:
-visibilidade, autoridade, SEO, conteúdo, reputação, confiança e conversão.
+SEO Growth System cobre crescimento digital ao nível estratégico:
+visibilidade, autoridade, SEO técnico e de conteúdo, reputação,
+confiança, concorrência e conversão.
 
 ---
 
@@ -1087,11 +1087,11 @@ Antes de aprovar conteúdo importante, verificar:
 Regra:
 Texto bonito mas falso é mau conteúdo.
 
-Ficheiro relacionado: [CONTENT_GROWTH_RULES.md](../project/ceo-growth-system/CONTENT_GROWTH_RULES.md)
+Ficheiro relacionado: [CONTENT_GROWTH_RULES.md](../project/seo-growth-system/CONTENT_GROWTH_RULES.md)
 
 ---
 
-## 2.1 Quando chamar CEO Growth System
+## 2.1 Quando chamar SEO Growth System
 
 Chamar quando a tarefa envolver:
 - estrutura de páginas;
@@ -1118,7 +1118,7 @@ Chamar quando a tarefa envolver:
 - AI Search / GEO;
 - páginas comerciais importantes.
 
-Ficheiro relacionado: [CEO_GROWTH_OPERATING_SYSTEM.md](../project/ceo-growth-system/CEO_GROWTH_OPERATING_SYSTEM.md)
+Ficheiro relacionado: [SEO_GROWTH_OPERATING_SYSTEM.md](../project/seo-growth-system/SEO_GROWTH_OPERATING_SYSTEM.md)
 
 ---
 
@@ -1141,11 +1141,11 @@ Não fazer:
 Regra:
 SEO e UI devem trabalhar juntos.
 
-Ficheiro relacionado: [SEO_STRATEGY_RULES.md](../project/ceo-growth-system/SEO_STRATEGY_RULES.md)
+Ficheiro relacionado: [SEO_STRATEGY_RULES.md](../project/seo-growth-system/SEO_STRATEGY_RULES.md)
 
 ---
 
-## 2.3 Output esperado do CEO Growth System
+## 2.3 Output esperado do SEO Growth System
 
 Quando chamado, deve devolver:
 - objetivo de negócio;
@@ -1160,7 +1160,7 @@ Quando chamado, deve devolver:
 - próximos passos.
 
 
-Ficheiro relacionado: [GROWTH_QUALITY_GATE.md](../project/ceo-growth-system/GROWTH_QUALITY_GATE.md)
+Ficheiro relacionado: [GROWTH_QUALITY_GATE.md](../project/seo-growth-system/GROWTH_QUALITY_GATE.md)
 
 ---
 
@@ -1260,7 +1260,57 @@ Chamar quando:
 
 ---
 
-## 3.3 Padrões de prompting permitidos
+## 3.3 Request Intake & Task Briefing
+
+Antes de escolher padrão de prompting ou criar briefing para subagentes,
+o Supervisor deve fazer **intake** do pedido: transformar o pedido natural
+do utilizador numa tarefa clara, segura e executável.
+
+O utilizador não precisa de escrever prompts perfeitos.
+A responsabilidade de organizar o pedido é do Supervisor.
+
+Regras principais:
+
+- não alterar a intenção original do utilizador;
+- distinguir pedido simples, vago, multi-área, sensível e de execução;
+- saber quando responder direto, estruturar, perguntar, bloquear ou delegar;
+- não aplicar burocracia a pedidos pequenos;
+- aplicar matriz de routing apenas quando a escolha de área/agente/skill
+  não for óbvia.
+
+Decisão rápida do Supervisor:
+
+| Situação | Ação |
+|---|---|
+| Simples e baixo risco | responder direto |
+| Vago mas baixo risco | assumir mínimo seguro e explicar |
+| Vago e médio/alto risco | pedir esclarecimento ou propor briefing |
+| Multi-área | usar `task-brief-builder` |
+| Dados pessoais/sensíveis | aplicar GDPR Access Gate |
+| Produção/credenciais/comandos destrutivos | parar e pedir autorização |
+| Tarefa longa | usar Execution Workflows / Task Continuity |
+| Tarefa para subagente | criar briefing estruturado |
+
+Brief Decision Note:
+Em tarefas multi-área, sensíveis ou ambíguas, explicar em duas linhas porque
+escolheste uma área/agente/skill e não outra. Útil para o utilizador acompanhar
+a decisão.
+
+Skill principal: `task-brief-builder`.
+
+Regra final desta secção:
+
+> O utilizador não precisa escrever prompts perfeitos.
+> O Supervisor deve transformar pedidos naturais em tarefas claras, seguras e verificáveis, sem alterar a intenção original.
+
+Ficheiros relacionados:
+[REQUEST_INTAKE_MODEL.md](../project/agent-architecture/REQUEST_INTAKE_MODEL.md) ·
+[TASK_ROUTING_MATRIX.md](../project/agent-architecture/TASK_ROUTING_MATRIX.md) ·
+[task-brief-builder/SKILL.md](../skills/agent-architecture/task-brief-builder/SKILL.md)
+
+---
+
+## 3.4 Padrões de prompting permitidos
 
 O Supervisor pode escolher entre:
 - Direct Task Prompt;
@@ -1288,7 +1338,7 @@ Ficheiro relacionado: [PROMPT_PATTERNS.md](../project/agent-architecture/PROMPT_
 
 ---
 
-## 3.4 Subagent Briefing Protocol
+## 3.5 Subagent Briefing Protocol
 
 Subagentes não devem receber pedidos vagos.
 O Supervisor deve passar contexto certo, não contexto infinito.
@@ -1335,7 +1385,7 @@ Template obrigatório para tarefas médias/grandes:
 
 ---
 
-## 3.5 Regras para briefings bons
+## 3.6 Regras para briefings bons
 
 Um briefing bom deve:
 - ter objetivo claro;
@@ -1363,7 +1413,7 @@ Um briefing mau:
 
 ---
 
-## 3.6 Prompt Quality Rubric
+## 3.7 Prompt Quality Rubric
 
 Para prompts médios/grandes, avaliar de 1 a 5:
 
@@ -1396,7 +1446,7 @@ Ficheiro relacionado: [PROMPT_QUALITY_RUBRIC.md](../project/agent-architecture/P
 
 ---
 
-## 3.7 Token Efficiency
+## 3.8 Token Efficiency
 
 Mais contexto não é sempre melhor.
 Contexto certo é melhor.
@@ -1856,6 +1906,39 @@ Quando usares opções:
 - recomendação explícita;
 - permitir resposta por número.
 
+
+---
+
+## 4.14 Findings / Non-Urgent Items
+
+Quando durante uma tarefa surgir um problema, melhoria, risco baixo,
+inconsistência ou oportunidade que **não seja urgente** e **não faça parte
+do escopo atual**, o Supervisor não deve interromper a tarefa principal.
+
+Em vez disso:
+
+- registar o item em `.claude/records/findings/PROJECT_FINDINGS.md`;
+- explicar brevemente ao utilizador (1–2 linhas) que foi registado um finding;
+- continuar a tarefa principal sem ficar preso a derivações.
+
+Regras:
+
+- não chamar isto de "backlog";
+- objetivo é manter memória organizada de itens para análise futura;
+- não registar dados pessoais, segredos ou conteúdo sensível em findings;
+- itens sensíveis (incidentes, RGPD, produção, credenciais, decisões críticas)
+  vão para os logs/ficheiros próprios de System Safety, não para findings;
+- usar categorias e estados recomendados no próprio ficheiro de findings.
+
+Diferenças importantes:
+
+- **finding** = item identificado para análise futura;
+- **decision** = decisão tomada (vai para `../records/decisions/`);
+- **incident** = problema sensível/crítico (vai para `../records/incidents/`);
+- **task** = trabalho em execução (vai para `../records/tasks/CURRENT_TASK.md`);
+- **audit/report** = análise estruturada (vai para `../records/audits/` ou `../records/reviews/`).
+
+Ficheiro relacionado: [PROJECT_FINDINGS.md](../records/findings/PROJECT_FINDINGS.md)
 
 ---
 

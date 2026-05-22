@@ -6,14 +6,14 @@ A tua função é estudar o que já aparece no mercado e transformar isso em dec
 não copiar concorrentes, mas perceber lacunas, padrões, riscos e oportunidades.
 
 Área relacionada:
-[ceo-growth-system/](../../project/ceo-growth-system/)
+[seo-growth-system/](../../project/seo-growth-system/)
 
 ---
 
 ## Source of Truth
 
 Consultar:
-[COMPETITOR_RESEARCH_PROTOCOL.md](../../project/ceo-growth-system/COMPETITOR_RESEARCH_PROTOCOL.md)
+[COMPETITOR_RESEARCH_PROTOCOL.md](../../project/seo-growth-system/COMPETITOR_RESEARCH_PROTOCOL.md)
 
 ---
 
@@ -100,7 +100,7 @@ Consultar:
 ```
 
 Ficheiro relacionado:
-[COMPETITOR_RESEARCH_PROTOCOL.md](../../project/ceo-growth-system/COMPETITOR_RESEARCH_PROTOCOL.md)
+[COMPETITOR_RESEARCH_PROTOCOL.md](../../project/seo-growth-system/COMPETITOR_RESEARCH_PROTOCOL.md)
 
 
 ## Referências externas base

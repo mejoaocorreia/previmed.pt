@@ -1,10 +1,10 @@
-# CEO Growth Operating System
+# SEO Growth Operating System
 
-Este ficheiro define como a área **CEO Growth System** trabalha.
+Este ficheiro define como a área **SEO Growth System** trabalha.
 
 ## Definição
 
-CEO Growth System é a camada de crescimento orgânico e visibilidade digital vista ao nível de direção.
+SEO Growth System é a camada de crescimento orgânico e visibilidade digital vista ao nível de direção.
 
 Não significa marca pessoal do CEO.
 Significa olhar para SEO, conteúdo, reputação, autoridade, confiança, concorrência,
