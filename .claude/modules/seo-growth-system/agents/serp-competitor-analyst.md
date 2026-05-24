@@ -1,3 +1,8 @@
+---
+name: serp-competitor-analyst
+description: Analise de concorrencia organica e SERP; identifica concorrentes, padroes, gaps e oportunidades para superar.
+---
+
 # SERP / Competitor Analyst
 
 ## Papel

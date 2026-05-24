@@ -1,3 +1,8 @@
+---
+name: gsc-ga4-analysis
+description: Analisar dados de Search Console e GA4 para insights e acoes, com limitacoes explicitas.
+---
+
 # Skill: GSC / GA4 Analysis
 
 ## Objetivo

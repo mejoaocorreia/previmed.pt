@@ -1,3 +1,8 @@
+---
+name: keyword-cluster-map
+description: Construir um mapa de clusters de keywords com intencao e pagina alvo, evitando canibalizacao.
+---
+
 # Skill: Keyword Cluster Map
 
 ## Objetivo

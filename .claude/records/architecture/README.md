@@ -8,20 +8,26 @@ Guardar **decisões de arquitetura**, as suas razões, alternativas rejeitadas e
 ## O que entra aqui
 - Por que usamos `departments`, `workspaces`, `tools`, `manuals`, `shared`, `modules`.
 - Por que tools ficam fora dos workspaces.
-- Por que records/templates é centralizado.
+- Por que os templates de records vivem dentro do module/plugin que os usa.
 - Por que workspaces usam modules e não os absorvem.
 - Decisões sobre limpeza estrutural (ex.: remoção de migração/archive).
 
 ## O que NÃO entra aqui
-- Logs operacionais (decisões de tarefas, comandos, acessos, dados sensíveis) — esses vivem em `.claude/records/decisions/` e nos logs próprios do System Safety.
 - Records de execução (audits, reviews, snapshots, incidents, rollbacks, tasks) — nas pastas próprias.
 
-## Distinção `architecture/` vs `decisions/`
-- **architecture/** — decisões **estruturais** do repo (como está organizado e porquê).
-- **decisions/** — logs **operacionais** (decisões de tarefas/comandos/dados), referenciados pelo supervisor/System Safety.
+## Logs operacionais (absorvidos da antiga pasta de decisões)
+A antiga pasta de decisões operacionais foi **removida** e todo o seu conteúdo movido para aqui (pendente de organização manual posterior):
+- `ARCHITECTURE_DECISION_LOG.md`
+- `COMMAND_APPROVAL_LOG.md`
+- `MCP_ACCESS_LOG.md`
+- `SENSITIVE_DATA_DECISION_LOG.md`
+- `TASK_DECISION_LOG.md`
+
+> Estes logs operacionais (tarefas, comandos, acessos, dados sensíveis) ficam temporariamente nesta pasta. A separação fina entre decisões estruturais e logs operacionais será tratada manualmente mais tarde.
 
 ## Ficheiros
 - [`architecture_log.md`](architecture_log.md) — registo cronológico das decisões de arquitetura.
+- Logs operacionais movidos da antiga `decisions/` (lista acima).
 
 ## Estado atual
-Base inicial, com as decisões da arquitetura modular Previmed registadas.
+Decisões da arquitetura modular Previmed registadas + logs operacionais absorvidos da antiga `decisions/`.

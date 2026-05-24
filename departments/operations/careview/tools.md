@@ -7,8 +7,8 @@ Listar as ferramentas (de `tools/`) relevantes para o trabalho no Careview.
 
 ## O que vai guardar aqui
 Este ficheiro **lista** tools relacionadas com este workspace — não as implementa. Pode referenciar:
-- [`tools/browser_rules_engine`](../../tools/browser_rules_engine/000_browser_rules_engine.md) — navegação e automação em plataformas/websites;
-- [`tools/email_escape`](../../tools/email_escape/000_email_escape.md) — escape/tratamento automático de emails/textos.
+- [`tools/browser_rules_engine`](../../../tools/browser_rules_engine/000_browser_rules_engine.md) — navegação e automação em plataformas/websites;
+- [`tools/email_escape`](../../../tools/email_escape/000_email_escape.md) — escape/tratamento automático de emails/textos.
 
 > **Estas tools não pertencem ao Careview.** São **reutilizáveis** e ficam em `tools/`. O Careview foi a necessidade que as originou, mas servem várias plataformas.
 

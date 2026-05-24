@@ -1,3 +1,8 @@
+---
+name: wordpress-seo-implementation
+description: Implementacao de SEO em WordPress sem partir o site; metadados, schema, sitemap, breadcrumbs e slugs com plano e rollback.
+---
+
 # WordPress SEO Implementation Agent
 
 ## Papel

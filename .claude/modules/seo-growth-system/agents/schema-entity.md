@@ -1,3 +1,8 @@
+---
+name: schema-entity
+description: Dados estruturados e entidades; schema JSON-LD que representa conteudo visivel, NAP e sameAs, sem duplicacao.
+---
+
 # Schema / Entity Agent
 
 ## Papel

@@ -1,3 +1,8 @@
+---
+name: cwv-performance-seo-review
+description: Diagnosticar Core Web Vitals e performance como fator de SEO/UX, sobretudo mobile.
+---
+
 # Skill: Core Web Vitals / Performance SEO Review
 
 ## Objetivo

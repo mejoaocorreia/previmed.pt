@@ -1,3 +1,8 @@
+---
+name: cwv-performance-seo
+description: Performance como fator de SEO/UX; Core Web Vitals (LCP, INP, CLS), sobretudo mobile, sem destruir o design.
+---
+
 # Core Web Vitals / Performance SEO Agent
 
 ## Papel

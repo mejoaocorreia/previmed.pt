@@ -66,4 +66,4 @@ Cada decisão: contexto · opções A/B/C · recomendação.
 YYYY-MM-DD por [autor/agente].
 
 ---
-> Após gravar: atualizar status (resumo+link), mover tarefas para backlog, oportunidades para opportunities, decisões duradouras para decisions. **Não duplicar** o relatório inteiro. Ver `.claude/modules/seo-growth-system/project/REPORTING_MODEL.md`.
+> Após gravar: atualizar status (resumo+link), mover tarefas para backlog, oportunidades para opportunities, decisões duradouras para decisions. **Não duplicar** o relatório inteiro. Ver `../project/REPORTING_MODEL.md`.

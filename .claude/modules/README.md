@@ -9,7 +9,7 @@ Um **module** é uma unidade completa e reutilizável de capacidade. Pode conter
 - `project/` — regras, operating system e playbooks;
 - `skills/` — procedimentos reutilizáveis.
 
-Os **templates de records** que um module usa **não vivem dentro do module** — vivem centralizados em `.claude/records/templates/` (ex.: SEO em `.claude/records/templates/seo/`). O module apenas os referencia.
+Os **templates de records** que um module usa vivem **dentro do próprio module/plugin** (ex.: SEO em `seo-growth-system/records-templates/`), para o module ser **autossuficiente ao exportar**. Os **records reais** ficam em `.claude/records/` do projeto-alvo.
 
 ## Princípios
 - Modules são **reutilizáveis** — podem ser usados por vários workspaces.
@@ -17,7 +17,7 @@ Os **templates de records** que um module usa **não vivem dentro do module** �
 - Modules **não substituem o supervisor geral** da Previmed. O supervisor continua a ser o router e o dono da governação (segurança, RGPD, produção, rollback).
 - Modules são **chamados pelo supervisor ou por comandos**, não se auto-ativam.
 - Um module tem sempre um `manifest.md` (o que é, quando usar, o que inclui, como exportar).
-- Templates de records vivem em `.claude/records/templates/`, não dentro do module.
+- Templates de records vivem **dentro do próprio module/plugin** (ex.: `records-templates/`), para o module ser autossuficiente ao exportar. Os records reais ficam em `.claude/records/` do projeto.
 
 ## Nota de compatibilidade com Claude Code
 O Claude Code **não descobre automaticamente** agentes/skills/commands dentro de `.claude/modules/`. Só descobre os que estão em `.claude/agents/`, `.claude/commands/`, `.claude/skills/`.

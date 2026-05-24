@@ -1,13 +1,13 @@
 # SEO Records Templates
 
-Templates SEO usados pelo module [`seo-growth-system`](../../../modules/seo-growth-system/README.md).
+Templates SEO do plugin [`seo-growth-system`](../README.md). **Vivem dentro do plugin** (para o plugin ser autossuficiente ao exportar).
 
 ## Para que servem
 Servem para criar records SEO consistentes: **auditorias, reports, decisões, tasks e go-live**.
 
 ## Importante
-- O module SEO **usa** estes templates, mas eles **pertencem ao sistema de records**, não ao module. (Um module guarda capacidade reutilizável; templates de records vivem em `.claude/records/templates/`.)
-- Estes ficheiros são **templates**, não records reais. Copiar para a pasta de records adequada (ex.: `.claude/records/audits/seo/`), datar e preencher.
+- Estes ficheiros são **templates**, não records reais. Copiar para a pasta de records do projeto-alvo (ex.: `.claude/records/audits/seo/`), datar e preencher.
+- Vivem dentro do plugin para que, ao instalar noutro repo, os templates venham junto.
 
 ## Templates disponíveis
 - [`SEO_AUDIT_TEMPLATE.md`](SEO_AUDIT_TEMPLATE.md) — auditoria SEO (completa ou por área).
@@ -20,4 +20,4 @@ Servem para criar records SEO consistentes: **auditorias, reports, decisões, ta
 `YYYY-MM-DD__report-type.md` (data ISO 8601 + `__` + kebab-case). Markdown sempre.
 
 ## Depois de criar um record datado
-Atualizar os ficheiros de estado vivos do projeto (status/backlog/opportunities/decisions) sem duplicar o relatório inteiro. Ver [`REPORTING_MODEL.md`](../../../modules/seo-growth-system/project/REPORTING_MODEL.md) do module.
+Atualizar os ficheiros de estado vivos do projeto (status/backlog/opportunities/decisions) sem duplicar o relatório inteiro. Ver [`REPORTING_MODEL.md`](../project/REPORTING_MODEL.md) do module.

@@ -1,3 +1,8 @@
+---
+name: local-seo-review
+description: Rever presenca local; GBP, NAP, paginas locais, reviews e schema LocalBusiness.
+---
+
 # Skill: Local SEO Review
 
 ## Objetivo

@@ -14,8 +14,10 @@ Cobrir a operação interna do dia a dia. Substitui a ideia limitada de "backoff
 ## Como os agentes vão usar
 Quando o pedido envolve processos internos, organização, fluxos ou coordenação operacional, o agente entra por aqui.
 
-## Relação com workspaces
-Dá suporte transversal a todos os workspaces, garantindo que o trabalho concreto assenta em processos claros.
+## Workspaces (dentro deste department)
+- **[`careview/`](careview/000_careview.md)** — trabalho da plataforma Careview (automações, dados, downloads, emails).
+
+Dá ainda suporte operacional transversal às frentes de outros departamentos, garantindo que o trabalho concreto assenta em processos claros.
 
 ## Estado atual
 Base explicativa inicial.

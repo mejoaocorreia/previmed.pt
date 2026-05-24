@@ -5,7 +5,14 @@ Equipa SEO / crescimento orgânico como **module reutilizável e exportável**.
 ## O que é
 O SEO Growth System é a capacidade de crescimento orgânico, visibilidade, autoridade, conteúdo estratégico, SEO técnico, schema/entidades, local SEO, performance/Core Web Vitals, AI Search e medição — organizada como **um module único**, com SEO Lead e subagentes bem definidos.
 
-Deixou de estar espalhado por `.claude/agents|commands|project|skills/seo-growth-system/`. **A fonte da verdade é este module.** Os caminhos antigos são pontes para o Claude Code descobrir/invocar o module.
+**A fonte da verdade é este module/plugin.** Todas as antigas pastas/pontes SEO fora do module foram **removidas** — `.claude/project/seo-growth-system/`, `.claude/skills/seo-growth-system/`, `.claude/commands/seo-growth-system/`, `.claude/agents/seo-growth-system/` e a ponte `.claude/commands/seo.md`. **Não há duplicação:** cada agente/skill/comando existe **uma única vez**, aqui. A descoberta nativa faz-se **instalando o plugin** (ver [`INSTALL.md`](INSTALL.md)).
+
+## Plugin Claude Code
+Este module é agora um **plugin Claude Code** propriamente formado: tem `.claude-plugin/plugin.json`, e os `agents/`, `commands/seo.md` e `skills/<n>/SKILL.md` têm **frontmatter** (`name`/`description`). Depois de **instalado** (ver [`INSTALL.md`](INSTALL.md)), os 15 agentes/subagentes, o comando `/seo` e as 11 skills passam a ser **descobertos nativamente** pelo Claude Code.
+
+- Instalar neste repo: `/plugin marketplace add .` → `/plugin install seo-growth-system@previmed-marketplace`.
+- Exportar para outro repo: `/plugin marketplace add <git-url>` → `/plugin install ...` (zero cópias manuais).
+- Os agentes/skills só são descobertos **após instalação** — não basta os ficheiros existirem.
 
 ## Fasquia
 Alta. O objetivo é trabalho SEO profissional, não básico — mesmo que gaste mais tokens quando a tarefa o justificar. SEO excelente alinha intenção, qualidade, técnica, autoridade, velocidade, experiência e negócio. Se uma proposta melhora ranking mas piora confiança, UX ou performance, **não está pronta**.
@@ -13,18 +20,18 @@ Alta. O objetivo é trabalho SEO profissional, não básico — mesmo que gaste 
 ## Como está organizado
 - [`manifest.md`](manifest.md) — identidade do module, quando usar, o que inclui, como exportar/ligar a um workspace.
 - [`agents/`](agents/) — SEO Lead + 14 subagentes especializados.
-- [`commands/seo.md`](commands/seo.md) — comando único `/seo` com modos. Ponte global em `.claude/commands/seo.md`.
+- [`commands/seo.md`](commands/seo.md) — comando único `/seo` com modos (fica disponível como `/seo` depois de instalar o plugin).
 - [`project/`](project/) — operating system, regras, quality gate e playbooks (fonte de detalhe operacional).
 - [`skills/`](skills/) — procedimentos reutilizáveis.
 
-Os **templates de records SEO** não ficam dentro do module — vivem em [`.claude/records/templates/seo/`](../../records/templates/seo/README.md). Os records reais vivem em `.claude/records/`.
+- [`records-templates/`](records-templates/README.md) — templates de records SEO (auditorias, reports, decisões, tasks, go-live). Vivem **dentro do plugin** para virem junto ao exportar. Os **records reais** ficam no projeto-alvo em `.claude/records/`.
 
 ## Como é chamado
 1. O **supervisor** identifica que o pedido toca web/search/content/WordPress SEO.
 2. Encaminha para o **SEO Lead** ([`agents/seo-lead.md`](agents/seo-lead.md)) — o supervisor não faz SEO diretamente.
 3. O SEO Lead decide que subagentes/skills/project docs usar (ver "Routing interno SEO" no seu ficheiro).
 4. Em trabalhos importantes, passa por **SEO QA** antes da entrega.
-5. Análises grandes são persistidas como records (ver `project/REPORTING_MODEL.md`; templates em `.claude/records/templates/seo/`).
+5. Análises grandes são persistidas como records (ver `project/REPORTING_MODEL.md`; templates em `records-templates/`).
 
 ## Limites (governação vence sempre)
 Segurança, RGPD/dados pessoais, produção, WordPress safety, rollback e escopo são do **supervisor / system-safety**. O SEO recomenda; não passa por cima destes limites. SEO não deve contaminar workspaces que não são web/search/content.

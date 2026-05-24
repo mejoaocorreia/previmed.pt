@@ -1,3 +1,8 @@
+---
+name: content-brief
+description: Briefs editoriais SEO; transforma pesquisa e intencao num brief acionavel para uma pagina superior a concorrencia.
+---
+
 # Content Brief Agent
 
 ## Papel

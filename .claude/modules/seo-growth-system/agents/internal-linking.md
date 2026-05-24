@@ -1,3 +1,8 @@
+---
+name: internal-linking
+description: Arquitetura de links internos; distribui relevancia, reduz orphan pages, breadcrumbs e anchors naturais.
+---
+
 # Internal Linking Architect
 
 ## Papel

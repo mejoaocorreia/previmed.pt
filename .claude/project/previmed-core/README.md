@@ -6,15 +6,15 @@ Núcleo de regras operacionais da Previmed dentro do `.claude/`.
 Documentar como a equipa de agentes deve entender e navegar o repositório Previmed **agora que é mais do que SEO/WordPress**. Não cria comandos nem código — apenas a lógica operacional.
 
 ## Contexto
-A Previmed passou de "pacote de Organic Growth" a **sistema operacional modular**: `departments/`, `workspaces/`, `tools/`, `manuals/`, `shared/` e `.claude/`. O SEO/WordPress é uma **capacidade** (departamento `web`), não a identidade do repo.
+A Previmed passou de "pacote de Organic Growth" a **sistema operacional modular**: `departments/` (que contêm as frentes de trabalho/"workspaces"), `tools/`, `manuals/`, `shared/` e `.claude/`. O SEO/WordPress é uma **capacidade** (departamento `web`), não a identidade do repo.
 
 Dentro do `.claude/` existe agora a camada **`modules/`** — unidades reutilizáveis e exportáveis. O primeiro module estruturado é o **`seo-growth-system`** (equipa SEO completa: SEO Lead + 14 subagentes, comando `/seo`, project docs e skills). Ver [`.claude/modules/README.md`](../../modules/README.md).
 
 Regras estruturais a reter:
 - **Workspaces usam modules; não absorvem modules** (referenciam, não copiam).
-- **Records reais** em `.claude/records/`; **templates de records** em `.claude/records/templates/` (SEO em `.claude/records/templates/seo/`).
+- **Records reais** em `.claude/records/`; **templates de records** vivem dentro do module/plugin que os usa (SEO em `.claude/modules/seo-growth-system/records-templates/`).
 - **Decisões arquiteturais** em `.claude/records/architecture/`.
-- O module SEO usa os templates SEO de `.claude/records/templates/seo/` e **não depende** de archive nem de mapa de migração.
+- O module SEO inclui os seus templates SEO (`records-templates/`) e **não depende** de archive nem de mapa de migração.
 
 ## Ficheiros
 - [ROUTING_MODEL.md](ROUTING_MODEL.md) — como o supervisor identifica contexto e encaminha o trabalho.

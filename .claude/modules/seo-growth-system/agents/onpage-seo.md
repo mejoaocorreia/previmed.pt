@@ -1,3 +1,8 @@
+---
+name: onpage-seo
+description: Otimizacao on-page; titles, meta descriptions, headings, copy a intencao, FAQs, links internos e alt text.
+---
+
 # On-page SEO Agent
 
 ## Papel

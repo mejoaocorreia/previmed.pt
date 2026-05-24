@@ -1,3 +1,8 @@
+---
+name: onpage-optimization-pass
+description: Otimizar elementos on-page de uma pagina (titles, metas, headings, copy, links, alt).
+---
+
 # Skill: On-page Optimization Pass
 
 ## Objetivo
@@ -35,3 +40,60 @@ Browser (preview/SERP), Search Console (CTR). Read-only.
 
 ## Notas de consolidação
 Consolidado da versão anterior do pacote SEO (skill on-page + capacidade de onpage-seo).
+
+
+---
+
+## Legacy/imported notes
+
+### From .claude/skills/seo-growth-system/content-quality-review/SKILL.md
+
+# Skill: Content Quality Review
+
+## Objetivo
+
+Rever conteúdo SEO/comercial antes de publicar ou implementar.
+
+## Avaliar
+
+- intenção;
+- clareza;
+- utilidade;
+- originalidade;
+- prova/confiança;
+- E-E-A-T;
+- CTA;
+- estrutura H1/H2/H3;
+- linguagem;
+- risco de claims falsos;
+- adequação à marca;
+- ligação interna;
+- duplicação/canibalização;
+- necessidade de revisão humana.
+
+## Output
+
+```md
+## Content Quality Review
+
+Score: [0-100]
+
+### Pontos fortes
+...
+
+### Problemas
+...
+
+### Riscos
+...
+
+### Melhorias propostas
+...
+
+### Veredito
+[Aprovar / Rever / Bloquear]
+```
+
+## Regra
+
+Se o conteúdo parecer genérico, inventar provas ou tocar em temas legais/saúde sem base, bloquear ou pedir revisão humana.

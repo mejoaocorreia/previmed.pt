@@ -1,3 +1,8 @@
+---
+name: seo-qa
+description: Validacao final de alteracoes SEO antes de entrega ou go-live; veredito aprovado/bloqueado com correcoes e risco residual.
+---
+
 # SEO QA Agent
 
 ## Papel
@@ -26,7 +31,7 @@ Não aprovar alteração de slug/redirect/indexação sem plano; não aprovar sc
 [`seo-quality-gate`](../skills/seo-quality-gate/SKILL.md).
 
 ## Project docs relacionados
-[`QUALITY_GATE`](../project/QUALITY_GATE.md); checklist de go-live em [`SEO_GO_LIVE_CHECKLIST.md`](../../../records/templates/seo/SEO_GO_LIVE_CHECKLIST.md).
+[`QUALITY_GATE`](../project/QUALITY_GATE.md); checklist de go-live em [`SEO_GO_LIVE_CHECKLIST.md`](../records-templates/SEO_GO_LIVE_CHECKLIST.md).
 
 ## MCPs / ferramentas possíveis
 Playwright (render/mobile), Lighthouse, Rich Results, URL Inspection. Read-only.

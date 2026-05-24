@@ -5,9 +5,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "@playwright/mcp@latest",
-        "--executable-path",
-        "C:\\Users\\mejoa\\AppData\\Local\\ms-playwright\\chromium-1224\\chrome-win64\\chrome.exe"
+        "@playwright/mcp@latest"
       ],
       "env": {}
     },

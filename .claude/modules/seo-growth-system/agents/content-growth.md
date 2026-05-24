@@ -1,3 +1,8 @@
+---
+name: content-growth
+description: Conteudo estrategico, intencao, E-E-A-T, paginas de servico, clareza e conversao; revisao e refresh de conteudo.
+---
+
 # Content Growth Agent
 
 ## Papel

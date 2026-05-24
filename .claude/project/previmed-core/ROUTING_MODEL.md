@@ -21,9 +21,9 @@ Os modules vivem em [`.claude/modules/`](../../modules/README.md) e são **unida
 Regras de modules e records:
 - **Workspaces usam modules; não absorvem modules.** Um workspace referencia um module, mas **não** copia agentes/skills/regras para dentro dele. O workspace guarda contexto específico; o module guarda capacidade reutilizável.
 - **Records reais** vivem em `.claude/records/`.
-- **Templates de records** vivem em `.claude/records/templates/` (SEO em `.claude/records/templates/seo/`). Os modules **referenciam** estes templates; **não** guardam templates próprios.
-- **Decisões arquiteturais** vivem em `.claude/records/architecture/` (distinto de `.claude/records/decisions/`, que são logs operacionais).
-- O module SEO usa os templates SEO a partir de `.claude/records/templates/seo/` e **já não depende** de migração nem de qualquer archive.
+- **Templates de records** vivem **dentro do module/plugin** que os usa (SEO em `.claude/modules/seo-growth-system/records-templates/`); os **records reais** ficam em `.claude/records/` do projeto.
+- **Decisões arquiteturais** e razões estruturais vivem em `.claude/records/architecture/`. (A antiga pasta de decisões operacionais foi removida e o seu conteúdo movido para `architecture/`.)
+- O module SEO inclui os seus templates SEO (`records-templates/`) e **já não depende** de migração nem de qualquer archive.
 
 ### Regra SEO (module `seo-growth-system`)
 Quando o pedido tocar **SEO, pesquisa orgânica, web content, Google, SERP, schema, performance SEO, AI Search ou WordPress SEO**, usar o module:
@@ -36,13 +36,13 @@ Quando o pedido tocar **SEO, pesquisa orgânica, web content, Google, SERP, sche
 ## Regras de encaminhamento
 - **SEO** só quando o pedido tocar web/search/content/WordPress SEO — não contaminar outros contextos.
 - **compliance / system-safety** entra **transversalmente** sempre que houver dados sensíveis, RGPD, permissões, risco ou produção.
-- **Careview** é workspace próprio (`workspaces/careview/`).
-- **Previmed.pt** é workspace próprio (`workspaces/previmed_pt/`).
+- **Careview** é workspace próprio em `departments/operations/careview/`.
+- **Previmed.pt** é workspace próprio em `departments/web/previmed_pt/`.
 - **Tools reutilizáveis** ficam em `tools/`, não dentro dos workspaces.
 - **Modules** são chamados pelo supervisor/comandos; não se auto-ativam e não substituem a governação do supervisor.
 
 ## Compatibilidade Claude Code
-O Claude Code não descobre conteúdo dentro de `.claude/modules/`. Por isso existem **pontes**: comando global `.claude/commands/seo.md` e pontes de agentes em `.claude/agents/seo-growth-system/`. A fonte da verdade é sempre o module.
+O Claude Code não descobre conteúdo dentro de `.claude/modules/` por si só. Por isso o SEO é empacotado como **plugin** (`modules/seo-growth-system/.claude-plugin/plugin.json`): depois de `/plugin install` (ver `INSTALL.md` do module), os agentes, o comando `/seo` e as skills passam a ser descobertos nativamente. A fonte da verdade é sempre o module/plugin; não há pontes nativas duplicadas.
 
 ## O que este modelo não faz
 - Não define comandos reais por área de negócio (`/previmed`, `/careview`, `/website` **não** existem ainda).

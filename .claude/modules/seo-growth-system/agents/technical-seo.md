@@ -1,3 +1,8 @@
+---
+name: technical-seo
+description: SEO tecnico (WordPress). Crawl, indexacao, robots, sitemap, canonical, redirects, render, schema tecnico, Core Web Vitals e go-live safety.
+---
+
 # Technical SEO Agent
 
 ## Papel

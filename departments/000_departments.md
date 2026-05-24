@@ -8,7 +8,8 @@ Representar a organização real da Previmed por departamentos — *quem/que ár
 ## O que vai guardar aqui
 - um ficheiro `000_<departamento>.md` por departamento;
 - contexto, responsabilidades e limites de cada departamento;
-- ligações aos workspaces, manuais e tools relevantes.
+- as frentes de trabalho ("workspaces") do departamento, como subpastas (ex.: `web/previmed_pt/`, `operations/careview/`);
+- ligações a manuais e tools relevantes.
 
 Departamentos iniciais:
 - **commercial** — área comercial, propostas, clientes e acompanhamento comercial.
@@ -24,12 +25,19 @@ Ao receber um pedido, o agente identifica **primeiro o departamento** responsáv
 
 > Usamos **departments** porque é a expressão usada internamente. Não usar `areas` nem `domains`.
 
-## Relação com workspaces
-Departamentos descrevem *responsabilidade*; workspaces descrevem *onde o trabalho acontece*. Um workspace (ex.: Previmed.pt) é normalmente servido por vários departamentos.
+## Workspaces (frentes de trabalho dentro dos departments)
+Um **workspace** é uma frente de trabalho concreta (um site, sistema, automação, campanha, frente ou produto). **Deixou de ser uma pasta de raiz** — cada workspace vive **dentro do department dono**, como subpasta:
+- `departments/web/previmed_pt/` — o site Previmed.pt.
+- `departments/operations/careview/` — trabalho da plataforma Careview.
+
+Notas:
+- Departamentos descrevem *responsabilidade*; o workspace descreve *onde o trabalho acontece*. Um workspace pode envolver vários departamentos (ex.: Previmed.pt toca `web`, `communications`, `commercial`, `compliance`), mas vive na subpasta do department dono.
+- Aqui, `workspace` **não** significa VS Code workspace; não usar `projects` nem `initiatives`.
+- Um workspace **usa** tools de `tools/` (referenciadas num `tools.md`), mas **não** as copia para dentro de si.
 
 ## Estado atual
 Base inicial com os 7 departamentos definidos como documentação.
 
 ## Próximos passos
 - [ ] detalhar responsabilidades e donos de cada departamento
-- [ ] ligar cada departamento aos workspaces e manuais ativos
+- [ ] ligar cada departamento às suas frentes de trabalho e manuais ativos

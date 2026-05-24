@@ -9,7 +9,7 @@ Sempre que se produz uma análise grande: auditoria completa, planeamento, conco
 ## Regras principais
 - **Análise grande sem record persistente = desperdício de contexto.** Antes de continuar, confirmar "isto está a ser persistido?". Se não, criar o record e só depois continuar.
 - Markdown (`.md`) por defeito (renderiza no GitHub).
-- Records reais vivem em `.claude/records/` (não no module). Os **templates** vivem centralizados em [`.claude/records/templates/seo/`](../../../records/templates/seo/README.md).
+- Records reais vivem em `.claude/records/` (do projeto-alvo). Os **templates** vivem dentro do plugin em [`../records-templates/`](../records-templates/README.md).
 - Não duplicar o relatório inteiro em ficheiros de estado — estes são índices/sumários.
 
 ## Processo
@@ -30,7 +30,7 @@ Formato de nome: data ISO 8601 + `__` + `report-type` em kebab-case + `.md`.
 Após um relatório datado: atualizar status (resumo+link), mover tarefas para backlog, oportunidades para opportunities, decisões duradouras para decisions. **Nunca** duplicar o relatório inteiro.
 
 ## Inputs
-A análise produzida + o template adequado de [`.claude/records/templates/seo/`](../../../records/templates/seo/README.md).
+A análise produzida + o template adequado de [`../records-templates/`](../records-templates/README.md).
 
 ## Outputs
 Record datado consistente + ficheiros de estado atualizados.

@@ -1,3 +1,8 @@
+---
+name: ai-search-visibility
+description: Visibilidade em AI Overviews / AI Mode / GEO; conteudo citavel e entidades, sem truques de manipulacao.
+---
+
 # AI Search Visibility / GEO Agent
 
 ## Papel

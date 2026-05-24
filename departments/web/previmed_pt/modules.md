@@ -7,7 +7,7 @@ Listar os modules de `.claude/modules/` que servem o site Previmed.pt e quando e
 
 ## Modules em uso
 ### seo-growth-system
-- **Onde:** [`.claude/modules/seo-growth-system/`](../../.claude/modules/seo-growth-system/README.md).
+- **Onde:** [`.claude/modules/seo-growth-system/`](../../../.claude/modules/seo-growth-system/README.md).
 - **Quando entra:** tarefas de conteúdo, pesquisa orgânica, WordPress SEO, performance web, schema, local SEO, análise de concorrentes e AI search.
 - **Como:** o supervisor encaminha para o **SEO Lead** do module (ou comando `/seo`). O SEO Lead coordena os subagentes e passa por SEO QA.
 

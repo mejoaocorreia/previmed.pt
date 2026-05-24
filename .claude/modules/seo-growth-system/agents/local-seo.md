@@ -1,3 +1,8 @@
+---
+name: local-seo
+description: SEO local; Google Business Profile, NAP, paginas locais justificadas, reviews e schema LocalBusiness.
+---
+
 # Local SEO Agent
 
 ## Papel

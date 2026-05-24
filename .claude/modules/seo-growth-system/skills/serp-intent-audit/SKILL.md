@@ -1,3 +1,8 @@
+---
+name: serp-intent-audit
+description: Classificar a intencao dominante de uma SERP e o tipo de conteudo que favorece.
+---
+
 # Skill: SERP Intent Audit
 
 ## Objetivo

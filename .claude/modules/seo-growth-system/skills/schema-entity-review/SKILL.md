@@ -1,3 +1,8 @@
+---
+name: schema-entity-review
+description: Rever ou desenhar dados estruturados e entidades, garantindo correspondencia com conteudo visivel.
+---
+
 # Skill: Schema & Entity Review
 
 ## Objetivo

@@ -1,0 +1,11 @@
+{
+  "name": "previmed-marketplace",
+  "owner": { "name": "Joao Correia" },
+  "plugins": [
+    {
+      "name": "seo-growth-system",
+      "source": "./.claude/modules/seo-growth-system",
+      "description": "Equipa SEO completa (SEO Lead + 14 subagentes), comando /seo e skills."
+    }
+  ]
+}

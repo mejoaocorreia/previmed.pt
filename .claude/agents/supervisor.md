@@ -1,4 +1,4 @@
-# Supervisor / Change Manager
+﻿# Supervisor / Change Manager
 
 <!--
 NOTA EXPLICATIVA PARA HUMANOS:
@@ -188,8 +188,8 @@ Ordem de prioridade:
 O repositório Previmed é um sistema operacional modular. Além destas seis áreas técnicas, o Supervisor deve saber navegar a estrutura do repo e funcionar como **router geral, não executor de tudo**:
 
 - **departments/** — quem/que área é responsável (commercial, operations, communications, web, compliance, health_safety, training).
-- **workspaces/** — espaços concretos de trabalho. **Careview** e **Previmed.pt** são workspaces próprios.
-- **tools/** — ferramentas reutilizáveis (não pertencem a workspaces).
+- **workspaces** — frentes de trabalho concretas, **dentro do department** respetivo (ex.: `departments/web/previmed_pt/`, `departments/operations/careview/`). Já não há pasta `workspaces/` na raiz.
+- **tools/** — ferramentas reutilizáveis (não pertencem a um workspace).
 - **manuals/** — procedimentos (fonte do "como se faz").
 - **shared/** — contexto, glossário, marca, referências, templates.
 - **.claude/modules/** — unidades reutilizáveis. Existe o module **`seo-growth-system`**: SEO entra via **SEO Lead** do module (ou `/seo`), e só quando o pedido tocar web/search/content/WordPress SEO.
@@ -369,7 +369,7 @@ Ficheiro relacionado: [PERSONAL_DATA_CLASSIFICATION.md](../project/system-safety
 Sempre que houver possível acesso a dados amarelos, laranja ou vermelhos,
 o Supervisor deve aplicar este gate.
 
-Ficheiros relacionados: [GDPR_ACCESS_GATE.md](../project/system-safety/GDPR_ACCESS_GATE.md) · [SENSITIVE_DATA_DECISION_LOG.md](../records/decisions/SENSITIVE_DATA_DECISION_LOG.md)
+Ficheiros relacionados: [GDPR_ACCESS_GATE.md](../project/system-safety/GDPR_ACCESS_GATE.md) · [SENSITIVE_DATA_DECISION_LOG.md](../records/architecture/SENSITIVE_DATA_DECISION_LOG.md)
 
 Formato obrigatório:
 
@@ -466,7 +466,7 @@ Não colocar no log:
 
 O log deve permitir auditoria sem expor dados.
 
-Ficheiros relacionados: [SENSITIVE_DATA_DECISION_LOG.md](../records/decisions/SENSITIVE_DATA_DECISION_LOG.md) · [TASK_DECISION_LOG.md](../records/decisions/TASK_DECISION_LOG.md)
+Ficheiros relacionados: [SENSITIVE_DATA_DECISION_LOG.md](../records/architecture/SENSITIVE_DATA_DECISION_LOG.md) · [TASK_DECISION_LOG.md](../records/architecture/TASK_DECISION_LOG.md)
 
 ---
 
@@ -831,7 +831,7 @@ Exemplos:
 Regra:
 Se o comando pode destruir, expor, publicar ou alterar produção, parar.
 
-Ficheiros relacionados: [COMMAND_PERMISSION_MODEL.md](../project/system-safety/COMMAND_PERMISSION_MODEL.md) · [COMMAND_APPROVAL_LOG.md](../records/decisions/COMMAND_APPROVAL_LOG.md)
+Ficheiros relacionados: [COMMAND_PERMISSION_MODEL.md](../project/system-safety/COMMAND_PERMISSION_MODEL.md) · [COMMAND_APPROVAL_LOG.md](../records/architecture/COMMAND_APPROVAL_LOG.md)
 
 ---
 
@@ -1068,7 +1068,7 @@ SEO Growth System é a área estratégica de crescimento orgânico e visibilidad
 
 **Esta capacidade vive agora como module reutilizável e exportável:** [`modules/seo-growth-system/`](../modules/seo-growth-system/README.md) — SEO Lead + 14 subagentes, comando `/seo`, project docs, skills e templates de records. É a **fonte da verdade** do SEO.
 
-Project docs antigos em [seo-growth-system/](../project/seo-growth-system/) ficam por compatibilidade (ver o README dessa pasta); desenvolver no module.
+Os project docs SEO vivem **só** no module: [modules/seo-growth-system/project/](../modules/seo-growth-system/project/). Não usar `.claude/project/seo-growth-system/` (removido) nem `.claude/skills/seo-growth-system/` (removido) como fonte.
 
 Serve para responder:
 - O site está organizado para gerar confiança?
@@ -1106,7 +1106,7 @@ Antes de aprovar conteúdo importante, verificar:
 Regra:
 Texto bonito mas falso é mau conteúdo.
 
-Ficheiro relacionado: [CONTENT_GROWTH_RULES.md](../project/seo-growth-system/CONTENT_GROWTH_RULES.md)
+Ficheiro relacionado: [CONTENT_RULES.md](../modules/seo-growth-system/project/CONTENT_RULES.md)
 
 ---
 
@@ -1137,7 +1137,7 @@ Chamar quando a tarefa envolver:
 - AI Search / GEO;
 - páginas comerciais importantes.
 
-Ficheiro relacionado: [SEO_GROWTH_OPERATING_SYSTEM.md](../project/seo-growth-system/SEO_GROWTH_OPERATING_SYSTEM.md)
+Ficheiro relacionado: [OPERATING_SYSTEM.md](../modules/seo-growth-system/project/OPERATING_SYSTEM.md)
 
 ---
 
@@ -1160,7 +1160,7 @@ Não fazer:
 Regra:
 SEO e UI devem trabalhar juntos.
 
-Ficheiro relacionado: [SEO_STRATEGY_RULES.md](../project/seo-growth-system/SEO_STRATEGY_RULES.md)
+Ficheiro relacionado: [STRATEGY_RULES.md](../modules/seo-growth-system/project/STRATEGY_RULES.md)
 
 ---
 
@@ -1179,7 +1179,7 @@ Quando chamado, deve devolver:
 - próximos passos.
 
 
-Ficheiro relacionado: [GROWTH_QUALITY_GATE.md](../project/seo-growth-system/GROWTH_QUALITY_GATE.md)
+Ficheiro relacionado: [QUALITY_GATE.md](../modules/seo-growth-system/project/QUALITY_GATE.md)
 
 ---
 
@@ -1593,8 +1593,8 @@ Regra:
 Nunca destruir contexto existente para criar uma versão “limpa” sem autorização.
 
 Ficheiros relacionados:
-[TASK_DECISION_LOG.md](../records/decisions/TASK_DECISION_LOG.md) ·
-[ARCHITECTURE_DECISION_LOG.md](../records/decisions/ARCHITECTURE_DECISION_LOG.md)
+[TASK_DECISION_LOG.md](../records/architecture/TASK_DECISION_LOG.md) ·
+[ARCHITECTURE_DECISION_LOG.md](../records/architecture/ARCHITECTURE_DECISION_LOG.md)
 
 ---
 
@@ -1624,7 +1624,7 @@ Não terminar uma tarefa sem saber exatamente o que foi alterado.
 
 Ficheiros relacionados:
 [EXECUTION_REVIEW.md](../project/execution-workflows/EXECUTION_REVIEW.md) ·
-[TASK_DECISION_LOG.md](../records/decisions/TASK_DECISION_LOG.md)
+[TASK_DECISION_LOG.md](../records/architecture/TASK_DECISION_LOG.md)
 
 ---
 
@@ -1952,7 +1952,7 @@ Regras:
 Diferenças importantes:
 
 - **finding** = item identificado para análise futura;
-- **decision** = decisão tomada (vai para `../records/decisions/`);
+- **decision** = decisão tomada (vai para `../records/architecture/`);
 - **incident** = problema sensível/crítico (vai para `../records/incidents/`);
 - **task** = trabalho em execução (vai para `../records/tasks/CURRENT_TASK.md`);
 - **audit/report** = análise estruturada (vai para `../records/audits/` ou `../records/reviews/`).

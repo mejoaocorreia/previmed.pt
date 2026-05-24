@@ -1,3 +1,8 @@
+---
+name: content-brief-generation
+description: Gerar um brief editorial SEO acionavel a partir de pesquisa e intencao.
+---
+
 # Skill: Content Brief Generation
 
 ## Objetivo

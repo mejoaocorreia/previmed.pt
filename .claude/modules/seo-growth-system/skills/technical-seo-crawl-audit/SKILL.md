@@ -1,3 +1,8 @@
+---
+name: technical-seo-crawl-audit
+description: Auditar o estado tecnico de um site (crawl, index, render, WordPress, structured data).
+---
+
 # Skill: Technical SEO Crawl Audit
 
 ## Objetivo

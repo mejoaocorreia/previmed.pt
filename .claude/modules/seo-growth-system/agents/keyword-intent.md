@@ -1,3 +1,8 @@
+---
+name: keyword-intent
+description: Pesquisa de keywords, intencao de pesquisa e clustering semantico; mapeia keywords a paginas e evita canibalizacao.
+---
+
 # Keyword & Intent Agent
 
 ## Papel

@@ -1,4 +1,4 @@
-# Supervisor Min / Code Runtime
+﻿# Supervisor Min / Code Runtime
 
 <!--
 NOTA EXPLICATIVA PARA HUMANOS:
@@ -197,8 +197,8 @@ Regra:
 Nunca destruir contexto existente para criar uma versão “limpa” sem autorização.
 
 Ficheiros relacionados:
-[TASK_DECISION_LOG.md](../records/decisions/TASK_DECISION_LOG.md) ·
-[ARCHITECTURE_DECISION_LOG.md](../records/decisions/ARCHITECTURE_DECISION_LOG.md)
+[TASK_DECISION_LOG.md](../records/architecture/TASK_DECISION_LOG.md) ·
+[ARCHITECTURE_DECISION_LOG.md](../records/architecture/ARCHITECTURE_DECISION_LOG.md)
 
 ---
 
@@ -350,7 +350,7 @@ Guardar apenas decisão, contexto mínimo e limites autorizados.
 Ficheiros relacionados:
 [DATA_PROTECTION_POLICY.md](../project/system-safety/DATA_PROTECTION_POLICY.md) ·
 [GDPR_ACCESS_GATE.md](../project/system-safety/GDPR_ACCESS_GATE.md) ·
-[SENSITIVE_DATA_DECISION_LOG.md](../records/decisions/SENSITIVE_DATA_DECISION_LOG.md)
+[SENSITIVE_DATA_DECISION_LOG.md](../records/architecture/SENSITIVE_DATA_DECISION_LOG.md)
 
 ---
 
@@ -518,9 +518,9 @@ Usar para:
 O SEO vive como **module reutilizável**. O Supervisor **não faz SEO diretamente** — encaminha para o **SEO Lead** do module (ou usa `/seo`). SEO só quando o pedido tocar web/search/content/WordPress SEO.
 
 Module (fonte da verdade):
-[modules/seo-growth-system/](../modules/seo-growth-system/README.md) · SEO Lead: [seo-lead.md](../modules/seo-growth-system/agents/seo-lead.md) · `/seo`: [commands/seo.md](../commands/seo.md)
+[modules/seo-growth-system/](../modules/seo-growth-system/README.md) · SEO Lead: [seo-lead.md](../modules/seo-growth-system/agents/seo-lead.md) · comando `/seo` (do plugin, após `/plugin install`)
 
-Project docs antigos (compatibilidade): [seo-growth-system/](../project/seo-growth-system/)
+Project docs e skills SEO vivem **só** no module ([project/](../modules/seo-growth-system/project/), [skills/](../modules/seo-growth-system/skills/)). As pastas `.claude/project/seo-growth-system/` e `.claude/skills/seo-growth-system/` foram removidas.
 
 ### Agent Architecture & Delegation
 
