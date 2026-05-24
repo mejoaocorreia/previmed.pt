@@ -183,6 +183,24 @@ Ordem de prioridade:
 
 ---
 
+## Arquitetura Previmed (router geral)
+
+O repositório Previmed é um sistema operacional modular. Além destas seis áreas técnicas, o Supervisor deve saber navegar a estrutura do repo e funcionar como **router geral, não executor de tudo**:
+
+- **departments/** — quem/que área é responsável (commercial, operations, communications, web, compliance, health_safety, training).
+- **workspaces/** — espaços concretos de trabalho. **Careview** e **Previmed.pt** são workspaces próprios.
+- **tools/** — ferramentas reutilizáveis (não pertencem a workspaces).
+- **manuals/** — procedimentos (fonte do "como se faz").
+- **shared/** — contexto, glossário, marca, referências, templates.
+- **.claude/modules/** — unidades reutilizáveis. Existe o module **`seo-growth-system`**: SEO entra via **SEO Lead** do module (ou `/seo`), e só quando o pedido tocar web/search/content/WordPress SEO.
+
+Regras de router:
+- **compliance / system-safety** entra transversalmente sempre que houver dados sensíveis, RGPD, permissões, risco ou produção.
+- O Supervisor encaminha para a área/workspace/module certo; não faz SEO diretamente.
+- Ordem de identificação de contexto e detalhe em [previmed-core/ROUTING_MODEL.md](../project/previmed-core/ROUTING_MODEL.md).
+
+---
+
 # 1. System Safety & Data Protection
 
 <!--
@@ -1048,7 +1066,9 @@ e conversão como temas de direção, não apenas como tarefas técnicas.
 
 SEO Growth System é a área estratégica de crescimento orgânico e visibilidade.
 
-Área relacionada: [seo-growth-system/](../project/seo-growth-system/)
+**Esta capacidade vive agora como module reutilizável e exportável:** [`modules/seo-growth-system/`](../modules/seo-growth-system/README.md) — SEO Lead + 14 subagentes, comando `/seo`, project docs, skills e templates de records. É a **fonte da verdade** do SEO.
+
+Project docs antigos em [seo-growth-system/](../project/seo-growth-system/) ficam por compatibilidade (ver o README dessa pasta); desenvolver no module.
 
 Serve para responder:
 - O site está organizado para gerar confiança?
@@ -1061,12 +1081,11 @@ Serve para responder:
 - SEO e design estão a trabalhar juntos?
 - A alteração pode prejudicar tráfego, indexação ou reputação?
 
-O Supervisor não deve fazer SEO profundo sozinho quando houver impacto relevante.
-Deve chamar o SEO Lead / SEO Growth System.
+O Supervisor **não faz SEO diretamente**. Quando o pedido tocar SEO/pesquisa orgânica/web content/Google/SERP/schema/performance SEO/AI Search/WordPress SEO, encaminha para o **SEO Lead** do module ([`modules/seo-growth-system/agents/seo-lead.md`](../modules/seo-growth-system/agents/seo-lead.md)) ou usa o comando `/seo`. O SEO Lead coordena os subagentes e passa por SEO QA antes de entregar.
 
 SEO Growth System cobre crescimento digital ao nível estratégico:
 visibilidade, autoridade, SEO técnico e de conteúdo, reputação,
-confiança, concorrência e conversão.
+confiança, concorrência e conversão. É reutilizável: pode servir vários workspaces e ser exportado para outros projetos.
 
 ---
 

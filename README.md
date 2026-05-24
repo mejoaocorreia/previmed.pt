@@ -1,47 +1,29 @@
-# Organic Growth Elite Pack
+# Previmed
 
+Este repositório organiza o trabalho digital, técnico e operacional da Previmed dentro do ecossistema CortexCore.
 
-Este pacote reforça o SEO Lead e a equipa SEO para um projeto WordPress de alto nível.
+Deixou de ser apenas um pacote de SEO/Organic Growth: é agora a **base operacional modular** da Previmed.
 
-Inclui:
-- SEO Lead completo;
-- especialistas SEO por área;
-- project docs para operar SEO como sistema;
-- skills reutilizáveis;
-- comandos;
-- MCP/tooling stack;
-- quality gates.
+## O que este repo inclui
+- **departments/** — a estrutura/departamentos da empresa.
+- **workspaces/** — espaços concretos de trabalho (ex.: Previmed.pt, Careview).
+- **tools/** — ferramentas reutilizáveis.
+- **manuals/** — manuais e procedimentos.
+- **shared/** — conhecimento e contexto comum.
+- **.claude/** — a equipa de agentes, comandos, skills, connectors, records e regras operacionais.
+- **.claude/modules/** — **unidades reutilizáveis e exportáveis** de agentes/comandos/regras/skills. O primeiro module estruturado é o **`seo-growth-system`**.
 
-## Como usar
+## Princípios da nova base
+- **Modules** são unidades reutilizáveis (agents + commands + project + skills + records_template); podem servir vários workspaces e ser exportados para outros projetos.
+- **SEO / organic growth** continua importante e profissional, mas é apenas **uma capacidade** — vive no module `seo-growth-system`, não é a identidade do repo. O Previmed.pt usa esse module; outros workspaces podem usar modules conforme necessário.
+- **WordPress / web development** é **uma parte** do sistema, não o sistema inteiro (vive no departamento `web`).
+- **Careview** é um **workspace próprio** (`workspaces/careview/`).
+- **Previmed.pt** é um **workspace próprio** (`workspaces/previmed_pt/`).
+- **Tools** podem nascer por necessidade da Previmed, mas são pensadas para serem **reutilizáveis** — e podem tornar-se públicas, open source ou produtos próprios mais tarde. Por isso vivem em `tools/`, não dentro de workspaces.
+- **.claude/** guarda agentes, comandos, skills, connectors, records e regras operacionais.
 
-1. Copiar `.claude/` para o projeto.
-2. Manter o teu `supervisor.md` existente.
-3. Substituir ou complementar o `seo-lead.md` anterior.
-4. Usar comandos/skills quando o pedido envolver SEO.
-5. Configurar MCPs/ferramentas apenas com autorização e preferencialmente read-only.
+## Entrada principal
+Ver [`000_previmed.md`](000_previmed.md) para a visão geral e as regras de navegação.
 
-## Prioridade recomendada
-
-1. SEO_OPERATING_SYSTEM.md
-2. SEO_TOOLING_MCP_STACK.md
-3. seo-lead.md
-4. technical-seo.md
-5. keyword-intent.md
-6. serp-competitor-analyst.md
-7. content-brief.md
-8. schema-entity.md
-9. seo-quality-gate
-
-
-## Reorganized folder layout
-
-This version groups all SEO/organic search assets under `organic-growth` subfolders:
-
-```txt
-.claude/agents/organic-growth/
-.claude/project/organic-growth/
-.claude/skills/organic-growth/
-.claude/commands/organic-growth/
-```
-
-I used **organic-growth** instead of only **seo** because the scope is broader than classic SEO: search visibility, technical SEO, content systems, local SEO, schema/entities, analytics, Core Web Vitals, competitor intelligence, and AI search/GEO.
+## Estado atual
+Base modular inicial. Estrutura criada como documentação explicativa — **sem código funcional e sem comandos funcionais ainda**.

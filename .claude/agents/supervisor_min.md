@@ -503,7 +503,7 @@ Usar para:
 Área relacionada:
 [system-safety/](../project/system-safety/)
 
-### SEO Growth System
+### SEO Growth System (module)
 
 Usar para:
 - SEO;
@@ -512,10 +512,15 @@ Usar para:
 - autoridade;
 - concorrência;
 - conversão;
-- impacto de crescimento.
+- impacto de crescimento;
+- schema, performance SEO, AI Search, WordPress SEO.
 
-Área relacionada:
-[seo-growth-system/](../project/seo-growth-system/)
+O SEO vive como **module reutilizável**. O Supervisor **não faz SEO diretamente** — encaminha para o **SEO Lead** do module (ou usa `/seo`). SEO só quando o pedido tocar web/search/content/WordPress SEO.
+
+Module (fonte da verdade):
+[modules/seo-growth-system/](../modules/seo-growth-system/README.md) · SEO Lead: [seo-lead.md](../modules/seo-growth-system/agents/seo-lead.md) · `/seo`: [commands/seo.md](../commands/seo.md)
+
+Project docs antigos (compatibilidade): [seo-growth-system/](../project/seo-growth-system/)
 
 ### Agent Architecture & Delegation
 

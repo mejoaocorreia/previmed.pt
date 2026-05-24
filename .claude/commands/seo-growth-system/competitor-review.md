@@ -1,28 +1,6 @@
-# Command: competitor-review
+# Command: competitor-review (ponte → /seo competitor)
 
-## Objetivo
+> Consolidado no comando único do module. Usar **`/seo competitor`**.
+> Fonte da verdade: [`.claude/modules/seo-growth-system/commands/seo.md`](../../modules/seo-growth-system/commands/seo.md).
 
-Analisar concorrentes/SERP para orientar estratégia de página, serviço ou cluster.
-
-## Processo
-
-1. Definir serviço/query/local.
-2. Chamar Competitor Research Agent.
-3. Listar concorrentes orgânicos/comerciais.
-4. Identificar padrões e gaps.
-5. Criar recomendações.
-
-## Output
-
-- concorrentes;
-- intenção;
-- padrões;
-- lacunas;
-- oportunidades;
-- próximos passos.
-
-## Regra
-
-Não copiar concorrentes.
-Não assumir dados pagos se não houver ferramenta.
-Registar data da análise quando for relatório.
+Análise de concorrentes/SERP → serp-competitor-analyst, com `competitor-gap-analysis`/`serp-intent-audit`. Não copiar concorrentes; registar data; não assumir dados pagos sem ferramenta. Estado: merged.
