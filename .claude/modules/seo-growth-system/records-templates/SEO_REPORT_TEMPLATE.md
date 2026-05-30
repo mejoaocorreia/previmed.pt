@@ -40,6 +40,14 @@ High / Medium / Low — explicar limitacoes, dados em falta, o que e evidencia e
 
 3-5 paragrafos: estado geral, principais insights, decisoes pendentes, riscos e direcao recomendada.
 
+## Mudancas Desde O Ultimo Report
+
+- Melhorias:
+- Regressoes:
+- Novos riscos:
+- Decisoes tomadas:
+- Itens concluidos:
+
 ## KPIs
 
 | KPI | Valor atual | Comparacao | Interpretacao | Limitacoes |

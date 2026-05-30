@@ -61,6 +61,16 @@ Entrega concreta que deve existir no fim.
 - Autorizacoes:
 - Outros agentes/equipas:
 
+## Definition Of Ready
+
+- [ ] Objetivo claro
+- [ ] Escopo e fora de ambito definidos
+- [ ] Paginas/URLs afetadas identificadas
+- [ ] Evidencia minima reunida ou limitacoes declaradas
+- [ ] Autorizacoes necessarias obtidas ou marcadas como bloqueio
+- [ ] Riscos principais identificados
+- [ ] Handoff/owner definido
+
 ## Passos / Lotes
 
 1. 
@@ -80,6 +90,15 @@ Entrega concreta que deve existir no fim.
 - [ ] 
 - [ ] 
 - [ ] 
+
+## Definition Of Done
+
+- [ ] Output esperado entregue
+- [ ] Validacao feita e registada
+- [ ] `seo-quality-gate` aplicado quando relevante
+- [ ] Risco residual declarado
+- [ ] Records/decisions/backlog atualizados quando aplicavel
+- [ ] Handoff concluido ou proximo passo definido
 
 ## Validacao
 

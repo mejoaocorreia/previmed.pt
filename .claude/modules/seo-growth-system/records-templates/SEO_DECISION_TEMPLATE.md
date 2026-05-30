@@ -8,6 +8,7 @@ Frase unica e clara do que foi decidido.
 
 ## Owner / Data
 
+- Status: [Proposed / Approved / Superseded / Reverted]
 - Decidido por:
 - Owner:
 - Data:

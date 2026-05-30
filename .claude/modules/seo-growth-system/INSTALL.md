@@ -114,3 +114,14 @@ O module e fonte unica: nao copiar agentes/skills/comandos manualmente para outr
 - `project/` nao e componente executavel de plugin; vai junto como referencia lida pelos agentes.
 - `records-templates/` contem templates; records reais ficam no projeto consumidor em `.claude/records/`.
 - Se comandos `/plugin` devolverem erro de schema, confirmar a documentacao oficial do Claude Code para o formato atual de `plugin.json`/`marketplace.json`.
+
+## Troubleshooting
+
+| Problema | Causa provavel | Solucao |
+|---|---|---|
+| `/seo` nao aparece | plugins ainda nao recarregados | correr `/reload-plugins` ou reiniciar Claude Code |
+| Agentes nao aparecem em `/agents` | marketplace/plugin nao instalado | confirmar `/plugin marketplace add ...` e `/plugin install seo-growth-system@previmed-marketplace` |
+| Erro de schema no plugin | runtime espera outro formato | validar `.claude-plugin/plugin.json` contra a versao atual do Claude Code |
+| Comando aparece com namespace | comportamento do runtime/local install | confirmar nome mostrado no runtime, mas manter `/seo` como comando oficial do module |
+| Subagente nao encontrado | nome sem namespace ou plugin nao carregado | usar `seo-growth-system:<agent-name>` e confirmar `/agents` |
+| Project docs nao sao carregados automaticamente | `project/` e referencia, nao comando | os agentes devem consultar os ficheiros por caminho relativo |

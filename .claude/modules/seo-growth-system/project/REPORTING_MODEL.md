@@ -81,6 +81,23 @@ Criar record para:
 
 ---
 
+## Matriz Evento -> Template
+
+| Evento | Record obrigatorio? | Template recomendado | Observacoes |
+|---|---|---|---|
+| Auditoria SEO completa | Sim | [`SEO_AUDIT_TEMPLATE.md`](../records-templates/SEO_AUDIT_TEMPLATE.md) | Snapshot datado com evidencia, hipoteses e plano |
+| Auditoria tecnica relevante | Sim | [`SEO_AUDIT_TEMPLATE.md`](../records-templates/SEO_AUDIT_TEMPLATE.md) | Pode ser audit tecnico por area |
+| Decisao de URL, slug, redirect, canonical, arquitetura ou schema global | Sim | [`SEO_DECISION_TEMPLATE.md`](../records-templates/SEO_DECISION_TEMPLATE.md) | Deve incluir alternativas, risco e rollback |
+| Go-live, migracao ou publicacao com impacto SEO | Sim | [`SEO_GO_LIVE_CHECKLIST.md`](../records-templates/SEO_GO_LIVE_CHECKLIST.md) | Exige autorizacao quando ha producao |
+| Task executavel multi-passo | Sim | [`SEO_TASK_TEMPLATE.md`](../records-templates/SEO_TASK_TEMPLATE.md) | Definir Definition of Ready/Done |
+| Task pequena resolvida no chat | Talvez | [`SEO_TASK_TEMPLATE.md`](../records-templates/SEO_TASK_TEMPLATE.md) | Criar so se houver impacto duradouro |
+| Relatorio mensal/periodico | Sim | [`SEO_REPORT_TEMPLATE.md`](../records-templates/SEO_REPORT_TEMPLATE.md) | Deve comparar periodo equivalente |
+| Keyword cluster map relevante | Sim | [`SEO_REPORT_TEMPLATE.md`](../records-templates/SEO_REPORT_TEMPLATE.md) ou task dedicada | Persistir clusters e decisoes |
+| SERP/competitor review relevante | Sim | [`SEO_REPORT_TEMPLATE.md`](../records-templates/SEO_REPORT_TEMPLATE.md) | Registar data, pais, idioma, dispositivo |
+| Quick answer sem decisao | Nao | n/a | Nao burocratizar |
+
+---
+
 ## Tipos de record
 
 ### 1. Datado — relatório/análise

@@ -105,6 +105,15 @@ Separar recomendacoes por fase:
 - Autorizacao necessaria:
 - Rollback necessario:
 
+## Decisao Necessaria
+
+- [ ] Nenhuma
+- [ ] Aprovar plano
+- [ ] Autorizar acesso
+- [ ] Autorizar producao
+- [ ] Priorizar backlog
+- [ ] Criar decision record
+
 ## Quality Gate
 
 Estado: [Aprovado / Aprovado com notas / Bloqueado / Precisa de dados / Precisa de autorizacao]

@@ -50,9 +50,9 @@ Este repo usa o module como capacidade SEO. O module, contudo, e generico e expo
 
 - `commands/seo.md` — comando oficial `/seo` com modos: `audit`, `technical`, `content`, `brief`, `keywords`, `local`, `schema`, `competitor`, `data`, `performance`, `ai-search`, `wordpress`, `go-live`, `qa`.
 
-## Project Docs Incluidos (12)
+## Project Docs Incluidos (15)
 
-`README` · `OPERATING_SYSTEM` · `STRATEGY_RULES` · `TECHNICAL_RULES` · `CONTENT_RULES` · `QUALITY_GATE` · `TOOLING_MODEL` · `KPI_MODEL` · `REPORTING_MODEL` · `SCHEMA_ENTITY_MODEL` · `LOCAL_SEO_PLAYBOOK` · `COMPETITOR_RESEARCH_PLAYBOOK`.
+`README` · `OPERATING_SYSTEM` · `STRATEGY_RULES` · `TECHNICAL_RULES` · `CONTENT_RULES` · `QUALITY_GATE` · `TOOLING_MODEL` · `KPI_MODEL` · `REPORTING_MODEL` · `SCHEMA_ENTITY_MODEL` · `LOCAL_SEO_PLAYBOOK` · `COMPETITOR_RESEARCH_PLAYBOOK` · `ROUTING_MATRIX` · `SAFETY_ESCALATION` · `MCP_CAPABILITIES`.
 
 ## Skills Incluidas (11)
 
@@ -76,6 +76,10 @@ O plugin inclui templates em [`records-templates/`](records-templates/README.md)
 - `SEO_GO_LIVE_CHECKLIST`
 
 Sao templates, nao records reais. Records reais ficam no projeto consumidor em `.claude/records/`.
+
+## Examples
+
+O module inclui exemplos genericos em [`examples/`](examples/README.md) para calibrar outputs bons sem guardar dados reais.
 
 ## Ferramentas / MCPs Possiveis
 

@@ -97,3 +97,10 @@ Estado: [Aprovado / Aprovado com notas / Bloqueado / Precisa de dados / Precisa 
 - Risco residual:
 - Autorizacao necessaria:
 - Proximo passo:
+
+## Go / No-Go Sign-off
+
+- Final approval: [Go / No-Go / Go with conditions]
+- Approved by:
+- Date:
+- Conditions:

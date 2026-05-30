@@ -46,6 +46,20 @@ YYYY-MM-DD__go-live-service-page.md
 
 ---
 
+## Arvore Sugerida No Projeto Consumidor
+
+```text
+.claude/records/
+├── audits/seo/
+├── decisions/seo/
+├── reports/seo/
+├── tasks/seo/
+├── go-live/seo/
+└── status/
+```
+
+---
+
 ## O Que Nunca Guardar
 
 Nunca guardar em records:

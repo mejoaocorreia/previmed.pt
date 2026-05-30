@@ -23,6 +23,15 @@ Este module e um plugin Claude Code com:
 
 Depois de instalado (ver [`INSTALL.md`](INSTALL.md)), os componentes passam a ser descobertos pelo Claude Code.
 
+## Quick Start
+
+1. Instalar o plugin seguindo [`INSTALL.md`](INSTALL.md).
+2. Confirmar que `/agents` mostra os subagentes `seo-growth-system:*`.
+3. Confirmar que `/seo` esta disponivel.
+4. Testar um gate simples com `/seo qa`.
+5. Testar uma auditoria em modo seguro com `/seo audit`.
+6. Se houver duvida de routing, consultar [`project/ROUTING_MATRIX.md`](project/ROUTING_MATRIX.md).
+
 ## Arquitetura Operacional
 
 - **`/seo`** — comando principal por modos; orquestra o fluxo no topo.
@@ -48,6 +57,7 @@ Se uma proposta melhora ranking teorico mas piora confianca, UX, performance, se
 - [`project/`](project/) — operating system, strategy, technical/content rules, quality gate, tooling, KPIs, reporting e playbooks.
 - [`skills/`](skills/) — procedimentos reutilizaveis.
 - [`records-templates/`](records-templates/README.md) — templates de records SEO.
+- [`examples/`](examples/README.md) — exemplos de outputs bons para calibracao.
 
 ## Como E Chamado
 
@@ -84,4 +94,4 @@ O module e generico. Dados especificos de marca, servicos, leis, entidades, clus
 
 ## Estado Atual
 
-Module operacional v1.1 — 15 agentes, 11 skills, comando `/seo` com 14 modos, 12 project docs e 5 records templates. Pronto para uso com Claude Code apos instalacao do plugin.
+Module operacional v1.1 — 15 agentes, 11 skills, comando `/seo` com 14 modos, 15 project docs, 5 records templates e exemplos de calibracao. Pronto para uso com Claude Code apos instalacao do plugin.
